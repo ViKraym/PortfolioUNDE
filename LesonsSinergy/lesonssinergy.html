@@ -4,34 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lesons figma</title>
-     <base href="/PortfolioUNDE/">
-    <link rel="stylesheet" href="LesonsSinergy/styles/style.css">
-    <link rel="stylesheet" href="LesonsSinergy/assets/fonts/Helvetica Neue/HelveticaNeue-Bold.otf">
-    <link rel="stylesheet" href="LesonsSinergy/assets/fonts/Inter,Montserrat/Inter/Inter-Italic-VariableFont_opsz,wght.ttf">
-    
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="assets/fonts/Helvetica Neue/HelveticaNeue-Bold.otf">
+    <link rel="stylesheet" href="assets/fonts/Inter,Montserrat/Inter/Inter-Italic-VariableFont_opsz,wght.ttf">
 </head>
 <body>
+ 
        
     <header>    
         <div class="container">
-            <div class="header_container">
+          
 
-                <div class="logo">
-                    <span><a href="/">FILI</a><strong> PC</strong></span> 
-                    <span>только лучшее</span>
+                <div >
+                    <div>
+                        <a class="logo"><span class="logo-1">FILI</span><strong class="logo-2">PC</strong></a> 
+                    </div>
+                    <div>только лучшее</div>
                 </div>
-
-                <div class="header_nav">
-                    <nav >
-                        <ul>
-                            <li><a href="/">Условия</a></li>
-                            <li><a href="/">Комплектации</a></li>
-                            <li class="header-button"><a href="/">Оформить заказ</a></li>
-                        </ul>
-                    </nav>
-                </div>
-
-            </div>
+               
+                <nav>
+                    <ul class="header_nav">
+                        <li><a href="#">Условия</a></li>
+                        <li><a href="#">Комплектации</a></li>
+                        <li class="header-button"><a href="#">Оформить заказ</a></li>
+                    </ul>
+                </nav>
         </div>
     </header>
 
@@ -39,56 +36,113 @@
 
     <main> 
 
-        <section class="test_flex">
-                 <img class="test_bg" src="LesonsSinergy/assets/images/hero_bg2.png" alt="PC">
-                <div class="test_titel">
-                    <h1 class="test_h1_titel">Купите компьютер вашей мечты</h1>
+        <section class="hero_flex">
+                 <img class="hero_bg" src="assets/images/hero_bg2.png" alt="PC">
 
-                    <p class="test_subtitel">
-                        Кастомные компьютеры на премиальных комплектующих
-                    </p>
+             <div class="hero-content">
+                    <div class="hero_titel">
+    
+                        <h1 class="hero_h1_titel">Купите компьютер вашей мечты</h1>
+    
+                        <p class="hero_subtitel">Кастомные компьютеры на премиальных комплектующих</p>
+    
+                      <div class="hero_button_box">
+                            <a class="hero_button" href="#">
+                                Перейти к вариантам
+                           </a>
+                      </div> 
+                    </div>
+    
+                    <div>
+                        <img class="hero_img" src="assets/images/pc.png" alt="PC">
+                    </div>
+             </div>
 
-                    <p class="test_button">
-                        <a href="/" class="test_button_a">Перейти к вариантам</a>
-                    </p> 
-                </div>
-                <div class="test_img">
-                    <img src="LesonsSinergy/assets/images/pc.png" alt="PC">
-                </div>
+
           </section>
         
-        <!-- <section class="hero"> 
-            <img class="hero_bg" src="assets/images/hero_bg.png" alt="">
-            <div class="container">
-                <div class="hero_block">
-                    <h1 class="hero_titel">Купите компьютер вашей мечты</h1>
-                    <span class="hero_subtitel">Кастомные компьютеры на премиальных комплектующих</span>
-                    <span class="button"><a href="/" class="button">Перейти к вариантам</a></span>  
-                </div>
-                <img class="hero_img" src="assets/images/pc.png" alt="">
-            </div>
-        </section> -->
 
         <section class="etaps">
-            <div class="logo_etaps">
-
-                <div>
-                    <span class="slogan">
-                        <strong>FILI PC</strong> сопроводит вас на всех этапах покупки
-                    </span>
-                </div>
-
-               <div>
-                    <span class="slogan_opisanie">
-                    Мы не просто продаём кастомные компьютеры высокого качества из премиальных комплектующих, но и сопровождаем клиента от этапа выбора комплектации до послегарантийного обслуживания.
-                    </span>
-               </div>
-            </div>
-
+              <div class="etaps-content">
+                    <div>
+                        <p class="slogan">
+                            <strong>FILI PC</strong> сопроводит вас на всех этапах покупки
+                        </p>
+                    </div>
+    
+                   <div>
+                        <p class="sub-slogan">
+                        Мы не просто продаём кастомные компьютеры высокого качества из премиальных комплектующих, но и сопровождаем клиента от этапа выбора комплектации до послегарантийного обслуживания.
+                        </p>
+                   </div>
+              </div>
         </section>
            
-        <section class="gallery">
-            <img class="test_bg" src="LesonsSinergy/assets/images/Image bg 3.png" alt="PC">
+        <section class="wrapper-box">
+            <img class="wrapper-bg" src="assets/images/Image bg 3.png" alt="PC">
+            <div class="wrapper-box-content">
+                <div class="etaps-wrapper">
+                    <div class="box-wrapper wrap-boxtop">
+                        <h1 class="box-number">01</h1>
+                        <div class="box-wrapper-content">
+                            <p class="box-wrapper-title">Подбор комплектации</p>
+                            <p class="box-wrapper-discription">Ваш персональный менеджер поможет с выбором подходящей именно вам комплектации на основе ваших пожеланий и задач.</p>
+                            <img class="wrapper-img-top" src="assets/images/image 7.png" alt="">
+                        </div>
+                    </div>
+                    <div class="box-wrapper wrap-box2">
+                       
+                        <div class="box-wrapper-content">
+                        <h1 class="box-number">02</h1>
+                            <p class="box-wrapper-title">Подбор комплектации</p>
+                            <p class="box-wrapper-discription">Ваш персональный менеджер поможет с выбором подходящей именно вам комплектации на основе ваших пожеланий и задач.</p>
+                        </div>
+                    </div>
+                    <div class="box-wrapper wrap-box3">
+                        <h1 class="box-number">03</h1>
+                        <div class="box-wrapper-content">
+                            <p class="box-wrapper-title">Подбор комплектации</p>
+                            <p class="box-wrapper-discription">Ваш персональный менеджер поможет с выбором подходящей именно вам комплектации на основе ваших пожеланий и задач.</p>
+                        </div>
+                    </div>
+                    <div class="box-wrapper wrap-box5">
+                        <div class="box-wrapper-content">
+                        <h1 class="box-number">04</h1>
+                            <p class="box-wrapper-title">Подбор комплектации</p>
+                            <p class="box-wrapper-discription">Ваш персональный менеджер поможет с выбором подходящей именно вам комплектации на основе ваших пожеланий и задач.</p>
+                        </div>
+                    </div>
+                    <div class="box-wrapper wrap-box4">
+                        
+                        <div class="box-wrapper-content">
+                        <h1 class="box-number">05</h1>
+                            <p class="box-wrapper-title">Подбор комплектации</p>
+                            <p class="box-wrapper-discription">Ваш персональный менеджер поможет с выбором подходящей именно вам комплектации на основе ваших пожеланий и задач.</p>
+                        </div>
+                    </div>
+                    <div class="box-wrapper wrap-box7">
+                        <h1 class="box-number">06</h1>
+                        <div class="box-wrapper-content">
+                            <p class="box-wrapper-title">Подбор комплектации</p>
+                            <p class="box-wrapper-discription">Ваш персональный менеджер поможет с выбором подходящей именно вам комплектации на основе ваших пожеланий и задач.</p>
+                        </div>
+                    </div>
+                     <div class="box-wrapper wrap-box6">
+                        <div class="box-wrapper-content">
+                        <h1 class="box-number">07</h1>
+                            <p class="box-wrapper-title">Подбор комплектации</p>
+                            <p class="box-wrapper-discription">Ваш персональный менеджер поможет с выбором подходящей именно вам комплектации на основе ваших пожеланий и задач.</p>
+                        </div>
+                    </div>
+            </div>
+
+
+
+            </div>
+        </section>
+
+        <!-- <section class="gallery">
+            <img class="hero_bg" src="assets/images/Image bg 3.png" alt="PC">
             <div class="wrapper">
 
             <div class="gallery-box box1">
@@ -97,17 +151,18 @@
                     <h2>Подбор комплектации</h2>
                     <p>Ваш персональный менеджер поможет с выбором подходящей именно вам комплектации на основе ваших пожеланий и задач.
                     </p>
-                    <img src="LesonsSinergy/assets/images/image 7.png" alt="">
+                    <img src="assets/images/image 7.png" alt="">
                 </div>
                 
             </div>
 
-            <div class="gallery-box box2">
-                <span class="box_number">02</span>
-                    
-                <div class="box2_div">
-                    <h2>Заявка</h2>
-                    <p>Как только вы определитесь с комплектацией, начнётся производство.</p>
+            <div class="gallery-box box2">               
+                <div class="box-div-left">
+                    <p class="box_number">02</p>
+                    <div class="box-title"> 
+                        <h2>Заявка</h2>
+                        <p>Как только вы определитесь с комплектацией, начнётся производство.</p>
+                    </div>
                 </div>
             </div>
 
@@ -145,36 +200,38 @@
 
 
             <div class="gallery-box box6">
-                <span class="box_number">06</span>
+                
                 <div class="box6_div">
-                    <h2 class="box_h2">Доставка</h2>
-                    <p>Доставим ваш заказ по России от 2 до 7 дней.</p>
+                    <p class="box_number">06</p>
+                    <div class="box-title">
+                        <h2 class="box_h2">Доставка</h2>
+                        <p>Доставим ваш заказ по России от 2 до 7 дней.</p>
+                    </div>
                 </div>
             </div>
 
             
               
             </div>
-          </section>
+          </section> -->
 
-          <section class="etaps">
-            <div class="logo_etaps">
-
-                <div>
-                    <span class="slogan">
-                        <strong>FILI PC</strong> сопроводит вас на всех этапах покупки
-                    </span>
-                </div>
-
-               <div>
-                    <span class="slogan_opisanie">
-                    Мы не просто продаём кастомные компьютеры высокого качества из премиальных комплектующих, но и сопровождаем клиента от этапа выбора комплектации до послегарантийного обслуживания.
-                    </span>
-               </div>
-            </div>
+              <section class="etaps">
+              <div class="etaps-content">
+                    <div>
+                        <p class="slogan">
+                            <strong>FILI PC</strong> сопроводит вас на всех этапах покупки
+                        </p>
+                    </div>
+    
+                   <div>
+                        <p class="sub-slogan">
+                        Мы не просто продаём кастомные компьютеры высокого качества из премиальных комплектующих, но и сопровождаем клиента от этапа выбора комплектации до послегарантийного обслуживания.
+                        </p>
+                   </div>
+              </div>
         </section>
 
-        <img width="100%" src="LesonsSinergy/assets/images/image 8.png" alt="">
+        <img width="100%" src="assets/images/image 8.png" alt="">
 
 <section class="complect-wrapper">
         
@@ -182,7 +239,7 @@
 
             <div class="complect-wrapper-box">
                   
-                    <div width="212px"><img src="LesonsSinergy/assets/images/Group 42.png" alt=""></div>
+                    <div width="212px"><img src="assets/images/Group 42.png" alt=""></div>
                    <div class="wrapper-title">
                         <p class="product-name">Супер скорость</p>
                         <p class="sub-title">Несколько готовых решений на выбор с возможностью кастомизации</p>
@@ -193,7 +250,7 @@
     <div class="complect-block">
         
                 <div class="complect_item">
-                    <img class="img-pc" src="LesonsSinergy/assets/images/image 13.png" alt="">
+                    <img class="img-pc" src="assets/images/image 13.png" alt="">
                     <p class="product-name">Optima</p>
                     <p class="sub-title">Оптимальное универсальное решение</p>
                     <p class="product-complect">Intel Core i7 + 3060Ti</p>
@@ -201,7 +258,7 @@
                 </div>
         
                 <div class="complect_item">
-                    <img class="img-pc" src="LesonsSinergy/assets/images/image 13 (1).png" alt="">
+                    <img class="img-pc" src="assets/images/image 13 (1).png" alt="">
                     <p class="product-name">Optima</p>
                     <p class="sub-title">Оптимальное универсальное решение</p>
                     <p class="product-complect">Intel Core i7 + 3060Ti</p>
@@ -212,7 +269,7 @@
     <div class="complect-block">
         
                 <div class="complect_item">
-                    <img class="img-pc" src="LesonsSinergy/assets/images/image 13 (2).png" alt="">
+                    <img class="img-pc" src="assets/images/image 13 (2).png" alt="">
                     <p class="product-name">Optima</p>
                     <p class="sub-title">Оптимальное универсальное решение</p>
                     <p class="product-complect">Intel Core i7 + 3060Ti</p>
@@ -220,7 +277,7 @@
                 </div>
         
                 <div class="complect_item">
-                    <img class="img-pc" src="LesonsSinergy/assets/images/image 13 (3).png" alt="">
+                    <img class="img-pc" src="assets/images/image 13 (3).png" alt="">
                     <p class="product-name">Optima</p>
                     <p class="sub-title">Оптимальное универсальное решение</p>
                     <p class="product-complect">Intel Core i7 + 3060Ti</p>
@@ -231,8 +288,14 @@
 
 </section>
 
-</main>
-<footer>
-</footer>
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+  
 </body>
 </html>
