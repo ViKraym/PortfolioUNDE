@@ -1,0 +1,196 @@
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url(/assets/fonts/Helvetica_Neue/HelveticaNeue-Bold.otf);
+}
+@font-face {
+    font-family: "Inter";
+    src: url(/assets/fonts/Inter/static/Inter_18pt-Bold.ttf);
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(/assets/fonts/Montserrat/static/Montserrat-Bold.ttf);
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.back-button {
+  position: fixed;
+bottom: 40px;
+right: 90px;
+width: 40px;
+height: 40px;
+color: black;
+background-color: #F9C201;
+display: inline;
+text-align: center;
+border-radius: 5px;
+}
+
+.back-button img {
+    padding: 3px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    background: linear-gradient(90deg, #2cdbfe 0%, #2c75fe 100%);
+}
+
+.logo-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.logo-text {
+    font-size: 25px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+li {
+    padding: 10px;
+    margin: 10px;
+    list-style-type: none;
+    width: 150px;
+    text-align: center;
+    border-radius: 5px ;
+
+    border: 2px solid black;
+    border-width: 2px 0 2px 0; 
+    transition: all 1s;
+   
+   
+}
+
+li:hover {
+    transition: all 1s;
+    /* color: #2c75fe; */
+    
+    background:#2cfe44;
+    
+    
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.my-project {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 0;
+}
+
+.project-box {
+    width: 300px;
+    height: 350px;
+    border: 5px double black;
+    border-radius: 20px;
+    margin: 0 25px;
+
+    background: linear-gradient(180deg, #2cfe44 0%, #01c3f9 100%); 
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.project-description-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.project-description {
+   margin: 10px;
+}
+
+
+
+
+
+.restoapp-box {
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(90deg, #FEDD2C 0%, #F9C201 100%); 
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.logofiliPC{
+display: flex;
+flex-direction: column;
+text-align: center;
+justify-content: space-around;
+word-wrap: wrap;
+font-family: "Inter", sans-serif;
+font-size: 36px; 
+
+padding: 0 25px;
+background: linear-gradient(90deg, rgb(115, 115, 115)0%, rgb(0, 0, 0)100%);
+border-radius: 10px;
+
+}
+
+div.logofiliPC span{
+font-family: "HelveticaNeue", sans-serif;
+font-size: 36px;
+font-weight: 800;
+background-image: linear-gradient(265.71deg ,rgba(161, 69, 189, 0.8)-1.44%, rgba(55, 0,-89, 0.8)77.83%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+div.logofiliPC strong{
+font-family: "Inter", sans-serif;
+font-weight: 800;
+color: white;
+}
+
+.ferstName {
+font-weight: 800;
+color: white;
+font-size: 16px;
+}
+

@@ -1,0 +1,46 @@
+:root{
+    --height: 80%;
+    --width: 30%;
+}
+
+main{
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+
+
+.games-all-box {
+    text-align: center;
+    width: var(--width);
+    height: var(--height);
+    padding: 10px;
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: antiquewhite;
+}
+
+.table-all-boxs {
+    text-align: center;
+    width: 100%;
+}
+
+.table-boxs {
+    width: 100%;
+    height: var(--height);
+}
+
+/* button {
+    border: 2px solid black;
+    border-radius: 50%;
+} */
+
+
+
+
+
