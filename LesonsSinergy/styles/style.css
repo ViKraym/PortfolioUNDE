@@ -1,55 +1,55 @@
 @font-face {
     font-family: "HelveticaNeue";
-    src: url(/assets/fonts/Helvetica_Neue/HelveticaNeue-Light.otf);
+    src: url(LesonsSinergy/assets/fonts/Helvetica_Neue/HelveticaNeue-Light.otf);
     font-weight: light;
     font-style: normal;
 }
 
 @font-face {
     font-family: "HelveticaNeue";
-    src: url(/assets/fonts/Helvetica_Neue/HelveticaNeue-Bold.otf);
+    src: url(LesonsSinergy/assets/fonts/Helvetica_Neue/HelveticaNeue-Bold.otf);
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Inter";
-    src: url(/assets/fonts/Inter/static/Inter_18pt-Light.ttf);
+    src: url(LesonsSinergy/assets/fonts/Inter/static/Inter_18pt-Light.ttf);
     font-weight: light;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Inter";
-    src: url(/assets/fonts/Inter/static/Inter_24pt-Regular.ttf);
+    src: url(LesonsSinergy/assets/fonts/Inter/static/Inter_24pt-Regular.ttf);
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Inter";
-    src: url(/assets/fonts/Inter/static/Inter_28pt-SemiBold.ttf);
+    src: url(LesonsSinergy/assets/fonts/Inter/static/Inter_28pt-SemiBold.ttf);
     font-style: normal;
 }
 
 
 @font-face {
     font-family: "Inter";
-    src: url(/assets/fonts/Inter/static/Inter_18pt-ExtraBold.ttf);
+    src: url(LesonsSinergy/assets/fonts/Inter/static/Inter_18pt-ExtraBold.ttf);
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Montserrat";
-    src: url(/assets/fonts/Montserrat/static/Montserrat-Light.ttf);
+    src: url(LesonsSinergy/assets/fonts/Montserrat/static/Montserrat-Light.ttf);
      font-weight: light;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Montserrat";
-    src: url(/assets/fonts/Montserrat/static/Montserrat-ExtraBold.ttf);
+    src: url(LesonsSinergy/assets/fonts/Montserrat/static/Montserrat-ExtraBold.ttf);
      font-weight: bold;
     font-style: normal;
 }
