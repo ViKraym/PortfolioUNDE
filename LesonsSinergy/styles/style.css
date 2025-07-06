@@ -70,7 +70,7 @@ a, a:visited {
     text-decoration: none;
 }
 
-.back-button {
+.back-button-filipc {
   position: fixed;
 bottom: 40px;
 right: 90px;
@@ -83,7 +83,7 @@ text-align: center;
 border-radius: 5px;
 }
 
-.back-button img {
+.back-button-filipc img {
     padding: 3px;
     width: 35px;
     height: 35px;
