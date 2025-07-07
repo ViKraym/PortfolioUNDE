@@ -12,21 +12,20 @@ function getRandomInt(min, max) {
  buttons.forEach( function(btn) {
     
     btn.addEventListener('click', function(){
+        let buttonAtrib = this.getAttribute('name');
         let b = this.innerHTML;
           console.log(b);
           console.log(this);
 
 
-          if (this.innerHTML == Number(botNumber)) {
+          if (buttonAtrib == Number(botNumber)) {
             this.innerHTML = "✔"
+            alert("Мои поздравления вы ДОТЫКАЛИСЬ ;)")
           } else {
             this.innerHTML = "✖"
           }
-        
-          
-
-
       }
 
     );
  });
+ 
