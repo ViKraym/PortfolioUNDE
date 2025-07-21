@@ -1,196 +1,117 @@
-@font-face {
-    font-family: "HelveticaNeue";
-    src: url(/assets/fonts/Helvetica_Neue/HelveticaNeue-Bold.otf);
-}
-@font-face {
-    font-family: "Inter";
-    src: url(/assets/fonts/Inter/static/Inter_18pt-Bold.ttf);
-}
-@font-face {
-    font-family: "Montserrat";
-    src: url(/assets/fonts/Montserrat/static/Montserrat-Bold.ttf);
-}
+/* style.css */
 
-
-body {
+/* Общие стили */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.back-button {
-  position: fixed;
-bottom: 40px;
-right: 90px;
-width: 40px;
-height: 40px;
-color: black;
-background-color: #F9C201;
-display: inline;
-text-align: center;
-border-radius: 5px;
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+    line-height: 1.6;
 }
 
-.back-button img {
-    padding: 3px;
-    width: 35px;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-
+/* Шапка сайта */
 header {
+    background-color: #2c3e50;
+    padding: 1rem 0;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
-
-    background: linear-gradient(90deg, #2cdbfe 0%, #2c75fe 100%);
 }
 
 .logo-box {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-around;
 }
 
 .logo-img {
-    width: 50px;
-    height: 50px;
-    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
 }
 
 .logo-text {
-    font-size: 25px;
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-
-ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-
-li {
-    padding: 10px;
-    margin: 10px;
-    list-style-type: none;
-    width: 150px;
-    text-align: center;
-    border-radius: 5px ;
-
-    border: 2px solid black;
-    border-width: 2px 0 2px 0; 
-    transition: all 1s;
-   
-   
-}
-
-li:hover {
-    transition: all 1s;
-    /* color: #2c75fe; */
-    
-    background:#2cfe44;
-    
-    
-}
-
-a {
-    color: black;
+    color: #ecf0f1;
+    font-size: 1.5rem;
     text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #e74c3c;
+}
+
+/* Основная секция */
+main {
+    padding: 2rem;
 }
 
 .my-project {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 25px 0;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .project-box {
-    width: 300px;
-    height: 350px;
-    border: 5px double black;
-    border-radius: 20px;
-    margin: 0 25px;
-
-    background: linear-gradient(180deg, #2cfe44 0%, #01c3f9 100%); 
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 30%;
 }
 
 .project-description-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    margin-top: 1rem;
 }
+
+.project-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #7f8c8d;
+}
+
 .project-description {
-   margin: 10px;
+    color: #95a5a6;
 }
 
-
-
-
-
-.restoapp-box {
-    width: 200px;
-    height: 50px;
-    background: linear-gradient(90deg, #FEDD2C 0%, #F9C201 100%); 
-    border-radius: 10px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Кнопка возврата */
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2c3e50;
+    padding: 10px;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-div.logofiliPC{
-display: flex;
-flex-direction: column;
-text-align: center;
-justify-content: space-around;
-word-wrap: wrap;
-font-family: "Inter", sans-serif;
-font-size: 36px; 
-
-padding: 0 25px;
-background: linear-gradient(90deg, rgb(115, 115, 115)0%, rgb(0, 0, 0)100%);
-border-radius: 10px;
-
+.back-button:hover {
+    background-color: #e74c3c;
 }
 
-div.logofiliPC span{
-font-family: "HelveticaNeue", sans-serif;
-font-size: 36px;
-font-weight: 800;
-background-image: linear-gradient(265.71deg ,rgba(161, 69, 189, 0.8)-1.44%, rgba(55, 0,-89, 0.8)77.83%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+/* Адаптивность */
+@media (max-width: 768px) {
+    .project-box {
+        width: 100%;
+    }
 }
-
-div.logofiliPC strong{
-font-family: "Inter", sans-serif;
-font-weight: 800;
-color: white;
-}
-
-.ferstName {
-font-weight: 800;
-color: white;
-font-size: 16px;
-}
-
