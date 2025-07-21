@@ -37,11 +37,12 @@ header {
  
 }
 
-.logo-img {
+.main-logo-img {
  width: 70px;
  height: 70px;
  border-radius: 50%;
 }
+
 
 .logo-text {
  color: #2c3e50;
