@@ -119,7 +119,7 @@ main{
     margin: auto;
     padding: auto;
     box-sizing: border-box;
-    background-color: #F9C201;
+    background: linear-gradient(90deg, #FEDD2C 0%, #F9C201 100%);
     max-width: 100%;
     min-width: 1440px;
     min-height: 80px;
