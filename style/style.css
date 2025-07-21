@@ -211,7 +211,12 @@ background-clip: text;
 
 
 
-
+.restoapp-box {
+    width: 80%;
+    border-radius: 10px;
+    padding: 10px 0;
+    background: linear-gradient(90deg, #FEDD2C 0%, #F9C201 100%);
+}
 
 
 
