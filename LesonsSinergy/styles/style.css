@@ -651,12 +651,20 @@ strong.text-obod {
 }
 
 .img-pc-checkbox{
-    width: 100px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
 
 }
 
-
+.checkbox-item {
+    display: flex;
+    flex-direction: row;
+    background: white;
+    width: 287px;
+    height: 111px;
+    border-radius: 20px;
+}
 
 
 
