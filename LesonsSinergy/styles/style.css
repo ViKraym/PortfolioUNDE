@@ -103,7 +103,7 @@ border-radius: 5px;
 /* Стили header начала */
 
 header {
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-weight: 500;
     font-size: 16px;
     width: 100%;
@@ -222,7 +222,7 @@ main{
 
 .hero_h1_titel{
     
-    font-family: "HelveticaNeue";
+    font-family: "HelveticaNeue", sans-serif;
     font-weight: bold;
     font-size: 80px;
 
@@ -232,7 +232,7 @@ main{
 
 .hero_subtitel{
 
-    font-family: "HelveticaNeue";
+    font-family: "HelveticaNeue", sans-serif;
     font-weight: 100;
     font-size: 28px;
     margin-top: 0px;
@@ -276,7 +276,7 @@ main{
 
 /* стили секции etaps начало */
 .etaps {
-    font-family: "HelveticaNeue";
+    font-family: "HelveticaNeue", sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -361,14 +361,14 @@ main{
 }
 
 .box-wrapper-title {
-     font-family: "Montserrat";
+     font-family: "Montserrat", sans-serif;
     font-weight: 900;
     font-size: 36px;
 }
 
 .box-wrapper-discription {
     font-size: 14px;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-weight: 200;
     margin: 10px 0;
 }
