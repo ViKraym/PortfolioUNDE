@@ -152,7 +152,7 @@ main {
 
 
 
- 
+
  gap: 2rem;
  margin-left: 5%;
 }
@@ -164,7 +164,7 @@ main {
   background-repeat: no-repeat;
  background-position: center;
  background-size: cover;
-filter: blur(5px); /* Добавляем размытие */
+/* filter: blur(5px);  Добавляем размытие */
 
  padding: 1.5rem;
  border-radius: 8px;
