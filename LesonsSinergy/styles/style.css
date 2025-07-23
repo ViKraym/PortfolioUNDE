@@ -657,7 +657,7 @@ strong.text-obod {
 
 }
 
-.checkbox-item {
+.checkbox-item-box {
     display: flex;
     flex-direction: row;
     background: white;
@@ -666,6 +666,10 @@ strong.text-obod {
     border-radius: 20px;
 }
 
+.checkbox-item-title{
+    display: flex;
+    flex-direction: column;
+}
 
 
 
