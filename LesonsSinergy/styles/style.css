@@ -662,6 +662,7 @@ footer{
 .checkbox-wrapper{
     display: flex;
     flex-direction: row;
+    gap: 25px;
 }
 
 .img-pc-checkbox{
