@@ -695,7 +695,7 @@ footer{
     font-size: 24px;
     background: linear-gradient(265deg, rgba(161, 69, 189, 0.8) -1.44%, rgba(55, 0, -89, 0.8) 77.83%), #000000;
     min-height: 50px;
-    min-width: 247px;
+    max-width: 247px;
 }
 
 
