@@ -645,6 +645,13 @@ strong.text-obod {
     -webkit-text-stroke-color: rgb(81, 81, 81);
 }
 
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .checkbox-wrapper{
     display: flex;
     flex-direction: row;
