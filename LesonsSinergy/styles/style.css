@@ -690,7 +690,7 @@ footer{
     flex-direction: column;
 }
 
-.checkbox-item-title>.product-complect{
+.product-complect-footer{
     font-size: 14px;
 }
 
@@ -721,22 +721,6 @@ footer{
     border: none;
 }
 
-        /* Размер текста для placeholder */
-        .footer-input::-webkit-input-placeholder {
-            font-size: 20px;
-        }
-
-        .footer-input::-moz-placeholder {
-            font-size: 20px;
-        }
-
-        .footer-input:-ms-input-placeholder {
-            font-size: 20px;
-        }
-
-        .footer-input:-moz-placeholder {
-            font-size: 20px;
-        }
 
 label{
     font-size: 18px;
