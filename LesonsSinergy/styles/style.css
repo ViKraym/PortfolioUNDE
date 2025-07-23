@@ -646,6 +646,7 @@ strong.text-obod {
 }
 
 footer{
+    font-family: "Inter", sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -657,6 +658,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: left;
+    gap: 25px;
 }
 
 .checkbox-wrapper{
@@ -693,7 +695,7 @@ footer{
     justify-content: center;
     font-family: "Inter", sans-serif;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 16px;
     background: linear-gradient(265deg, rgba(161, 69, 189, 0.8) -1.44%, rgba(55, 0, -89, 0.8) 77.83%), #000000;
     min-height: 50px;
     max-width: 247px;
@@ -736,7 +738,10 @@ label{
 
 }
 
-
+.slogan-zayavka{
+    margin: 20px 0;
+    font-size: 18px;
+}
 
 
 
