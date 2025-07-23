@@ -609,7 +609,7 @@ main{
     margin: 30px;
     text-align: left;
 }
-
+/* 
     .product-name {
         font-family: 'Inter';
         color: black;
@@ -629,7 +629,7 @@ main{
         font-family: 'Inter';
         font-size: 32px;
         color: black;
-    }
+    } */
 
 
 
@@ -644,7 +644,7 @@ main{
     -webkit-text-stroke-color: rgb(255, 255, 255);
 }
 
-.complect_item.item-second {
+.item-second.product-complect {
      font-family: "Inter", sans-serif;
     font-weight: 600;
     color: transparent;
@@ -652,7 +652,7 @@ main{
     -webkit-text-stroke-color: rgb(255, 255, 255);
 }
 
-.complect_item.item-third {
+.item-third.product-complect {
      font-family: "Inter", sans-serif;
     font-weight: 600;
     color: transparent;
@@ -660,7 +660,7 @@ main{
     -webkit-text-stroke-color: rgb(255, 255, 255);
 }
 
-.complect_item.item-fourth {
+.item-fourth.product-complect {
      font-family: "Inter", sans-serif;
     font-weight: 600;
     color: transparent;
