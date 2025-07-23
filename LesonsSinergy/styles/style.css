@@ -86,6 +86,7 @@ background: linear-gradient(-90deg, #A145BD 0%, #370059 100% );
 display: inline;
 text-align: center;
 border-radius: 5px;
+font-size: 18pt;
 }
 
 .back-button-filipc img {
