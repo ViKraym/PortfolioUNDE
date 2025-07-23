@@ -150,9 +150,9 @@ main {
 .project-box {
  /* background-color: #fff; */
  background-image: url("assets/Image_bg_3.png");
- background-size: cover; /* Заполняет контейнер, сохраняя пропорции */
+ background-size: 600px auto; /* Увеличиваем размер для обрезки */
+ background-position: center top; /* Позиционируем нужную часть */
  background-repeat: no-repeat;
- background-position: center; /* Центрируем изображение */
  padding: 1.5rem;
  border-radius: 8px;
  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
