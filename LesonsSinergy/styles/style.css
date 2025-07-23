@@ -690,7 +690,14 @@ footer{
     flex-direction: column;
 }
 
+.product-name-footer{
+    color: #000000;
+    font-size: 14px;
+}
+
+
 .product-complect-footer{
+    color: #767676;
     font-size: 14px;
 }
 
