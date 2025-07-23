@@ -636,38 +636,8 @@ main{
 
 /* --------------------------------complect_item items */
 
-.item-first.product-complect{
-    font-family: "Inter", sans-serif;
-    font-weight: 600;
-    color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgb(255, 255, 255);
-}
 
-
-
-
-
-
-
-
-.item-second.product-complect {
-     font-family: "Inter", sans-serif;
-    font-weight: 600;
-    color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgb(255, 255, 255);
-}
-
-.item-third.product-complect {
-     font-family: "Inter", sans-serif;
-    font-weight: 600;
-    color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgb(255, 255, 255);
-}
-
-.item-fourth.product-complect {
+.text-obod {
      font-family: "Inter", sans-serif;
     font-weight: 600;
     color: transparent;
