@@ -148,7 +148,7 @@ main {
 
 /* Стили для карточек проектов */
 .project-box {
- background-color: #fff;
+ /* background-color: #fff; */
  background-image: url("assets/Image_bg_3.png");
  background-size: cover; /* Заполняет контейнер, сохраняя пропорции */
  background-repeat: no-repeat;
