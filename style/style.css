@@ -148,7 +148,16 @@ main {
 .my-project {
  display: flex;
   flex-direction: row;
- 
+  background: radial-gradient(
+ circle at center,
+ rgba(255, 0, 0, 1),
+ rgba(255, 165, 0, 0.8),
+ rgba(255, 255, 0, 0.6),
+ rgba(0, 255, 0, 0.4),
+ rgba(0, 0, 255, 0.2),
+ rgba(128, 0, 128, 0)
+ );
+ filter: blur(10px);
  flex-wrap: wrap;
  gap: 2rem;
  margin-left: 5%;
