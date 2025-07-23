@@ -609,9 +609,9 @@ main{
     margin: 30px;
     text-align: left;
 }
-/* 
+
     .product-name {
-        font-family: 'Inter';
+        font-family: 'Inter', sans-serif;
         color: black;
     }
 
@@ -621,15 +621,15 @@ main{
     }
 
     .product-complect {
-        font-family: 'Inter';
+        font-family: 'Inter', sans-serif;
         font-size: 32px;
         color: black;
     }
     .product-count {
-        font-family: 'Inter';
+        font-family: 'Inter', sans-serif;
         font-size: 32px;
         color: black;
-    } */
+    }
 
 
 
@@ -643,6 +643,13 @@ main{
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgb(255, 255, 255);
 }
+
+
+
+
+
+
+
 
 .item-second.product-complect {
      font-family: "Inter", sans-serif;
