@@ -689,6 +689,10 @@ footer{
     flex-direction: column;
 }
 
+.checkbox-item-title>.product-complect{
+    font-size: 14px;
+}
+
 .footer-button{
     display: flex;
     align-items: center;
