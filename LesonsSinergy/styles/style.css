@@ -705,8 +705,13 @@ footer{
     padding: 5px;
     border-radius: 20px;
     background-color: #ffffff00;
+    border: none;
 }
 
+label{
+    font-size: 18px;
+
+}
 
 
 
