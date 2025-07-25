@@ -377,6 +377,7 @@ a {
 
 /*начало затемнение картинка */
 .imgWrap {
+    height: 306px;
     position: relative;
     display: inline-block;
     overflow: hidden; /* Обрезаем всё, что выходит за границы элемента */
