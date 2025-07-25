@@ -1,61 +1,55 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // Находим все элементы меню
   const menuItems = document.querySelectorAll('.menu-element');
-  
-  // Находим модальное окно
   const modal = document.getElementById('productModal');
   const closeBtn = document.querySelector('.close-modal');
-  
-  // Данные о товарах (можно заменить на запрос к API)
-  const productsData = {
+
+  // Данные о товарах (можно заменить на API)
+  const products = {
     pizza: {
-      title: 'Пицца',
-      ingredients: 'Тесто, томатный соус, сыр моцарелла, ветчина, грибы',
+      title: 'Пицца «Маргарита»',
+      ingredients: 'Тесто, томатный соус, сыр моцарелла, помидоры, базилик',
       weight: '450 г',
       price: '590 ₽',
       image: 'restoApp/assets/images/pizza.webp'
     },
     soup: {
-      title: 'Супы',
-      ingredients: 'Куриный бульон, картофель, морковь, лук, зелень',
+      title: 'Томатный суп',
+      ingredients: 'Томаты, сливки, чеснок, базилик, гренки',
       weight: '350 г',
       price: '320 ₽',
       image: 'restoApp/assets/images/supiy.webp'
     },
-    // Добавьте данные для других товаров
+    // Добавьте остальные товары
   };
-  
-  // Обработчик клика по элементам меню
+
+  // Обработчик клика
   menuItems.forEach(item => {
     item.addEventListener('click', function(e) {
       e.preventDefault();
-      
-      // Получаем тип продукта из alt изображения
-      const productType = this.querySelector('img').alt;
-      const product = productsData[productType];
-      
-      // Заполняем модальное окно данными
+      const productId = this.querySelector('img').alt; // pizza, soup и т.д.
+      const product = products[productId];
+
+      // Заполняем модальное окно
       document.querySelector('.product-title').textContent = product.title;
-      document.querySelector('.ingredients p').textContent = product.ingredients;
-      document.querySelector('.weight-price p:first-child').innerHTML = `<strong>Вес:</strong> ${product.weight}`;
-      document.querySelector('.price').innerHTML = `<strong>Цена:</strong> ${product.price}`;
-      document.querySelector('.product-image img').src = product.image;
-      document.querySelector('.product-image img').alt = product.title;
+      document.querySelector('.ingredients-text').textContent = product.ingredients;
+      document.querySelector('.weight').textContent = product.weight;
+      document.querySelector('.price-value').textContent = product.price;
       
+      // Указываем полный путь к изображению
+      const imgElement = document.querySelector('.product-image img');
+      imgElement.src = window.location.pathname.includes('PortfolioUNDE') 
+        ? '/PortfolioUNDE/' + product.image 
+        : product.image;
+      imgElement.alt = product.title;
+
       // Показываем модальное окно
       modal.style.display = 'flex';
     });
   });
-  
-  // Закрытие модального окна
-  closeBtn.addEventListener('click', function() {
-    modal.style.display = 'none';
-  });
-  
-  // Закрытие при клике вне окна
-  modal.addEventListener('click', function(e) {
-    if (e.target === modal) {
-      modal.style.display = 'none';
-    }
+
+  // Закрытие модалки
+  closeBtn.addEventListener('click', () => modal.style.display = 'none');
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) modal.style.display = 'none';
   });
 });
