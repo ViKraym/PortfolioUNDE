@@ -296,10 +296,11 @@ a {
 }
 
 .menu-link {
-  display: block; /* Ссылка занимает всю площадь li */
-  text-decoration: none; /* Убираем подчёркивание */
-  color: inherit; /* Наследуем цвет текста */
-  padding: 25px; /* Добавляем отступы для удобства клика */
+    height: 306px;
+    display: block; /* Ссылка занимает всю площадь li */
+    text-decoration: none; /* Убираем подчёркивание */
+    color: inherit; /* Наследуем цвет текста */
+    padding: 0; /* Добавляем отступы для удобства клика */
 }
 
 .menu-link img {
