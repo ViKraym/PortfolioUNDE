@@ -17,3 +17,9 @@
          }
   });
 
+
+  
+document.querySelector('.top-button').addEventListener('click', function(e) {
+  e.preventDefault(); // Отменяем стандартное поведение ссылки
+  window.scrollTo({ top: 0, behavior: 'smooth' }); // Плавная прокрутка
+});
