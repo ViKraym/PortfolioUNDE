@@ -140,6 +140,7 @@ a {
  flex-direction: column;
  gap: 15px;
  align-items: flex-start;
+
  }
  
  .nav {
@@ -166,8 +167,7 @@ a {
  }
  
  .cta-button {
- width: 100%;
- margin-top: 15px;
+ display: none;
  }
 }
 
