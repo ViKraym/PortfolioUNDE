@@ -608,7 +608,7 @@ main img {
 }
 
 footer {
-    width: 1440px;
+    min-width: 1440px;
     background-color: rgba(28, 28, 28, 1);
     text-align: center;
     margin: 100px 0 0 0;
