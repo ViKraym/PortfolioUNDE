@@ -273,41 +273,22 @@ a {
     text-align: start;
     margin: 0;
     padding: 0;
-    
 }
 
 
 .list-menu-box ol{
     display: flex;
-   flex-direction: row;
+    flex-direction: row;
     align-items: center;
     justify-content: space-around;
     margin: 0;
     padding: 0;
-    
 }
-
-.shad{
-    display: block; /* Важно для корректного позиционирования */
-}
-
-.shad::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 50%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
-    pointer-events: none;
-}
-
 
 
 .menu-element {
     border-radius: 16px;
     margin: 0;
-    
     list-style-type: none;
 }
 
@@ -317,7 +298,7 @@ a {
     text-decoration: none; /* Убираем подчёркивание */
     color: inherit; /* Наследуем цвет текста */
     padding: 0; /* Добавляем отступы для удобства клика */
-    z-index: 2;
+    z-index: 21;
 }
 
 .menu-link img {
@@ -339,14 +320,58 @@ a {
     z-index: 2;
 }
 
+/*начало затемнение картинка */
+.imgWrap {
+    height: 306px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden; /* Обрезаем всё, что выходит за границы элемента */
+    z-index: -1;
+    box-shadow: inset 0 -30px 20px -10px rgba(0, 0, 0, 0.3);
+}
+
+.imgWrap::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 0 0 16px 16px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+    z-index: 1;
+    pointer-events: none; /* ← Вот это ключевое свойство! */
+}
+
+main img {
+
+    height: 304px;
+    width: 304px;
+    border-radius: 16px;
+}
+/* конец затемнение картинка */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* конец стилей секции menu */
+
+/* начало стилей секции events */
 .list-popular{
     text-align: start;
     white-space: nowrap;
 }
 
-/* конец стилей секции menu */
-
-/* начало стилей секции events */
 
 .new-product {
     display: flex;
@@ -392,39 +417,7 @@ a {
 
 /* конец стилей секции events */
 
-/*начало затемнение картинка */
-.imgWrap {
-    height: 306px;
-    position: relative;
-    display: inline-block;
-    overflow: hidden; /* Обрезаем всё, что выходит за границы элемента */
-    z-index: -1;
-    box-shadow: inset 0 -30px 20px -10px rgba(0, 0, 0, 0.3);
-}
 
-.imgWrap::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: 100%;
-    border-radius: 0 0 16px 16px;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
-    z-index: 1;
-    pointer-events: none; /* ← Вот это ключевое свойство! */
-}
-
-main img {
-
-    height: 304px;
-    width: 304px;
-    border-radius: 16px;
-}
-
-
-/* конец затемнение картинка */
 
 /* начало стили бейджа */
 .badge {
