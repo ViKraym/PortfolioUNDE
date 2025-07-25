@@ -7,9 +7,11 @@
 body {
     font-family: "inter", system-ui, sans-serif; /*system-ui шрифт используемый пользователем на его устройстве*/
     font-weight: 600;
-    margin: auto;
-    padding: auto;
+    margin: 0;
+    padding: 0;
     width: 100%;
+    overflow-x: auto; /* Разрешаем горизонтальную прокрутку */
+    min-width: 1440px;
 }
 .section-title {
     text-align: start;
@@ -545,7 +547,7 @@ main img {
     color: #fff;
     margin-left: 16px;
     padding-right: 50px;
-    width: 100%;
+    width: 85%;
     font-weight: 600;
     z-index: 2;
 }
@@ -599,7 +601,7 @@ main img {
 }
 
 footer {
-    width: 100%;
+    width: 1440px;
     background-color: rgba(28, 28, 28, 1);
     text-align: center;
     margin: 100px 0 0 0;
