@@ -301,6 +301,7 @@ a {
     text-decoration: none; /* Убираем подчёркивание */
     color: inherit; /* Наследуем цвет текста */
     padding: 0; /* Добавляем отступы для удобства клика */
+    z-index: 2;
 }
 
 .menu-link img {
