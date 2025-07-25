@@ -8,26 +8,32 @@
   <base href="/PortfolioUNDE/">
 </head>
 <body>
-  <header class="header">
-      <div class="header-container">
-             <!-- Логотип -->
-          <div class="logo">
-            <a href="#"><span class="accent-header">Виктор</span>Design</a>
-          </div>
-          
-          <!-- Навигация -->
-          <nav class="nav">
-            <ul class="nav-list">
-              <li><a href="#about">Обо мне</a></li>
-              <li><a href="#projects">Работы</a></li>
-              <li><a href="#contact">Контакты</a></li>
-            </ul>
-          </nav>
-          
-          <!-- Кнопка -->
-          <a href="#contact" class="cta-button">Связаться</a>
-      </div>
-  </header>
+<header class="header">
+  <div class="header-container">
+    <div class="logo">
+      <a href="#"><span class="accent-header">Виктор</span>Design</a>
+    </div>
+    
+    <!-- Кнопка для открытия меню -->
+    <button class="menu-toggle" aria-expanded="false" aria-controls="nav-list">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    
+    <!-- Навигация -->
+    <nav class="nav" id="nav-list">
+      <ul class="nav-list">
+        <li><a href="#about">Обо мне</a></li>
+        <li><a href="#projects">Работы</a></li>
+        <li><a href="#contact">Контакты</a></li>
+      </ul>
+    </nav>
+    
+    <!-- Кнопка -->
+    <a href="#contact" class="cta-button">Связаться</a>
+  </div>
+</header>
 
 
 
@@ -116,5 +122,6 @@
   <footer class="footer">
     <p>© 2025 Виктор. Все права защищены.</p>
   </footer>
+  <script src="scripts/nav-mobile.js"></script>
 </body>
 </html>

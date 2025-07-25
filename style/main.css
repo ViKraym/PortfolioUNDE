@@ -30,8 +30,9 @@ a {
   color: white;
 }
 
+/* Общие стили для заголовка */
 .header {
-   background-color: #3c096ccd;
+  background-color: #3c096ccd;
   padding: 10px 0;
   position: fixed;
   width: 100%;
@@ -47,8 +48,10 @@ a {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  position: relative; /* Для гамбургера */
 }
 
+/* Стили для логотипа */
 .logo a {
   color: white;
   font-size: 24px;
@@ -56,14 +59,47 @@ a {
   text-decoration: none;
 }
 
+/* Стили для гамбургера */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 10px;
+  position: absolute;
+  right: 20px;
+}
 
-/* Навигационное меню */
-.nav-list {
+.menu-toggle .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 4px 0;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+/* Стили для навигации */
+.nav {
   display: flex;
   gap: 30px;
   list-style: none;
   margin: 0;
   padding: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #3c096c;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+
+.nav-list {
+  width: 100%;
+  padding: 20px 0;
 }
 
 .nav-list a {
@@ -71,44 +107,118 @@ a {
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
+  display: block;
+  padding: 10px 20px;
 }
 
 .nav-list a:hover {
   color: #e0aaff;
 }
 
-
-/* Кнопка "Связаться" */
+/* Стили для кнопки "Связаться" */
 .cta-button {
-  background-color: #9d4edd;
-  color: white;
-  padding: 10px 25px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background-color 0.3s;
+ background-color: #9d4edd;
+ color: white;
+ padding: 10px 25px;
+ border-radius: 30px;
+ text-decoration: none;
+ font-weight: 600;
+ transition: background-color 0.3s;
 }
 
 .cta-button:hover {
-  background-color: #7b2cbf;
+ background-color: #7b2cbf;
 }
 
 .accent-header {
-  color: #590887;
+ color: #590887;
 }
 
-
-/* Адаптивность */
+/* Адаптивные стили */
 @media (max-width: 768px) {
-  .header-container {
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .nav-list {
-    gap: 15px;
-  }
+ .header-container {
+ flex-direction: column;
+ gap: 15px;
+ align-items: flex-start;
+ }
+ 
+ .nav {
+ display: block;
+ opacity: 0;
+ pointer-events: none;
+ transform: translateY(-100%);
+ }
+ 
+ .nav.active {
+ opacity: 1;
+ pointer-events: auto;
+ transform: translateY(0);
+ }
+ 
+ .nav-list {
+ flex-direction: column;
+ gap: 15px;
+ padding: 20px;
+ }
+ 
+ .menu-toggle {
+ display: block;
+ }
+ 
+ .cta-button {
+ width: 100%;
+ margin-top: 15px;
+ }
 }
+
+/* Анимация гамбургера */
+.menu-toggle.active .bar:nth-child(1) {
+ transform: rotate(45deg) translate(5px, 6px);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+ opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+ transform: rotate(-45deg) translate(7px, -8px);
+}
+
+/* Дополнительные анимации */
+.nav-enter {
+ opacity: 0;
+ transform: translateY(-10px);
+}
+
+.nav-enter-active {
+ opacity: 1;
+ transform: translateY(0);
+ transition: all 0.3s ease;
+}
+
+.nav-exit {
+ opacity: 1;
+ transform: translateY(0);
+}
+
+.nav-exit-active {
+ opacity: 0;
+ transform: translateY(-10px);
+ transition: all 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .main-logo{
   width: 200px;
