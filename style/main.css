@@ -1,0 +1,301 @@
+/* Основные стили */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f0ff;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+
+/* Шапка */
+.sub-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 120px 20px;
+  background: linear-gradient(135deg, #5a189a, #7b2cbf);
+  color: white;
+}
+
+.header {
+   background-color: #3c096ccd;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(60, 9, 108, 0.2);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo a {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+
+/* Навигационное меню */
+.nav-list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-list a:hover {
+  color: #e0aaff;
+}
+
+
+/* Кнопка "Связаться" */
+.cta-button {
+  background-color: #9d4edd;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #7b2cbf;
+}
+
+.accent-header {
+  color: #e0aaff;
+}
+
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .nav-list {
+    gap: 15px;
+  }
+}
+
+.main-logo{
+  width: 200px;
+  border-radius: 50%;
+  margin-left: 50px;
+}
+
+.preview-text{
+  display: flex;
+  flex-direction: column;
+}
+
+.accent {
+  color: #e0aaff;
+}
+/* Сетка проектов */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.project-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(90, 24, 154, 0.1);
+  text-align: center;
+  color: #333;
+}
+
+.project-logo {
+  width: 180px;
+  height: 120px;
+  margin-bottom: 15px;
+  object-fit: contain;
+}
+
+
+/* Форма */
+button {
+  background-color: #5a189a;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #7b2cbf;
+}
+/* Подвал */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #3c096c;
+  color: white;
+  
+}
+
+
+
+/* Секция контактов */
+.contact {
+  background: linear-gradient(135deg, #f9f0ff 0%, #e6d4ff 100%);
+  padding: 80px 20px;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact h2 {
+  color: #3c096c;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.contact p {
+  color: #5a189a;
+  margin-bottom: 40px;
+}
+
+/* Стили формы */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 15px 0;
+  border: none;
+  border-bottom: 2px solid #c77dff;
+  background: transparent;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.form-group textarea {
+  resize: none;
+}
+
+.form-group label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  color: #7b2cbf;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #9d4edd;
+}
+
+.form-group input:focus + label,
+.form-group textarea:focus + label,
+.form-group input:valid + label,
+.form-group textarea:valid + label {
+  top: -20px;
+  font-size: 14px;
+  color: #5a189a;
+}
+
+.underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: #5a189a;
+  transition: all 0.3s;
+}
+
+.form-group input:focus ~ .underline,
+.form-group textarea:focus ~ .underline {
+  width: 100%;
+}
+
+/* Стили кнопки */
+.submit-btn {
+  align-self: center;
+  padding: 15px 40px;
+  background: #5a189a;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s;
+}
+
+.submit-btn:hover {
+  background: #7b2cbf;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(90, 24, 154, 0.2);
+}
+
+.submit-btn svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: white;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: all 0.3s;
+}
+
+.submit-btn:hover svg {
+  transform: translateX(5px);
+}
+
