@@ -19,7 +19,21 @@ document.addEventListener('DOMContentLoaded', function() {
       price: '320 ₽',
       image: 'restoApp/assets/images/supiy.webp'
     },
-    // Добавьте остальные товары
+    gotDishes: {
+      title: 'Горячие блюда',
+      ingredients: 'Рис, Креветки, Овощи, Соусы, Специи и приправы',
+      weight: '350 г',
+      price: '320 ₽',
+      image: 'restoApp/assets/images/hot.webp'
+    },
+    salads: {
+      title: 'Салаты',
+      ingredients: 'Томаты, Моцарелла, Кедровые орешки, Оливковое масло, Свежая зелень',
+      weight: '350 г',
+      price: '320 ₽',
+      image: 'restoApp/assets/images/salat.webp'
+    },
+    
   };
 
   // Обработчик клика
