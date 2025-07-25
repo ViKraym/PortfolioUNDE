@@ -121,8 +121,11 @@ a {
 }
 
 .accent {
-  color: #e0aaff;
+  color: #7d00c5;
+
 }
+
+
 /* Сетка проектов */
 .projects-grid {
   display: grid;
