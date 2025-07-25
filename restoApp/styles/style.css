@@ -290,15 +290,30 @@ a {
     border-radius: 16px;
     margin: 0;
     list-style-type: none;
+    position: relative; /* Для позиционирования псевдоэлемента */
+    overflow: hidden;   /* Обрезаем лишнее */
 }
 
 .menu-link {
     height: 306px;
     display: block; /* Ссылка занимает всю площадь li */
+    position: relative; /* Для z-index */
+    z-index: 2;
     text-decoration: none; /* Убираем подчёркивание */
     color: inherit; /* Наследуем цвет текста */
     padding: 0; /* Добавляем отступы для удобства клика */
-    z-index: 21;
+    
+}
+
+.menu-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;        /* Высота затемнения */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+    pointer-events: none; /* Игнорируем клики */
 }
 
 .menu-link img {
