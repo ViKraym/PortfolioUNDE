@@ -260,7 +260,7 @@ a {
 
 /* начало стилей секции menu */
 .menu {
-    max-width: 1440px;
+    
     position: relative;
     display: flex;
     flex-direction: column;
@@ -291,7 +291,7 @@ a {
 
 .menu-element {
     margin: 0;
-    padding: 25px;
+    
     list-style-type: none;
 }
 
@@ -299,7 +299,7 @@ a {
   display: block; /* Ссылка занимает всю площадь li */
   text-decoration: none; /* Убираем подчёркивание */
   color: inherit; /* Наследуем цвет текста */
-  padding: 10px; /* Добавляем отступы для удобства клика */
+  padding: 25px; /* Добавляем отступы для удобства клика */
 }
 
 .menu-link img {
