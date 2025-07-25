@@ -345,6 +345,100 @@ main img {
 }
 
 
+/* Стили модального окна */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-container {
+  background: white;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  padding: 20px;
+  position: relative;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-content {
+  display: flex;
+  gap: 30px;
+}
+
+.product-description {
+  flex: 1;
+}
+
+.product-image {
+  flex: 1;
+}
+
+.product-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.price {
+  font-size: 24px;
+  color: #e74c3c;
+  margin-top: 15px;
+}
+
+.modal-container {
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+@media (max-width: 768px) {
+  .modal-content {
+    flex-direction: column;
+  }
+  
+  .product-image {
+    order: -1;
+  }
+}
+
+
+.add-to-cart {
+  background: #27ae60;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+
+
+
+/* Стили модального окна */
+
 /* начало стилей секции events */
 .list-popular{
     text-align: start;
