@@ -308,7 +308,7 @@ a {
 
 .product-name  {
     position: relative;
-    top: -85px;
+    top: -45px;
     padding: 10px;
     border-radius: 0 0 16px 16px;
     z-index: 2;
@@ -317,32 +317,10 @@ a {
     margin-left: 16px;
     width: 100%;
     font-weight: 600;
-    z-index: 2;
+  
 }
 
-/*начало затемнение картинка */
-.imgWrap {
-    height: 306px;
-    position: relative;
-    display: inline-block;
-    overflow: hidden; /* Обрезаем всё, что выходит за границы элемента */
-    z-index: -1;
-    box-shadow: inset 0 -30px 20px -10px rgba(0, 0, 0, 0.3);
-}
 
-.imgWrap::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: 100%;
-    border-radius: 0 0 16px 16px;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
-    z-index: 1;
-    pointer-events: none; /* ← Вот это ключевое свойство! */
-}
 
 main img {
 
@@ -350,21 +328,7 @@ main img {
     width: 304px;
     border-radius: 16px;
 }
-/* конец затемнение картинка */
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* конец стилей секции menu */
 
 /* начало стилей секции events */
 .list-popular{
