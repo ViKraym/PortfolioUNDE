@@ -24,7 +24,7 @@ a {
   text-align: center;
   padding: 120px 20px;
   background: linear-gradient(135deg, #5a189a, #7b2cbf);
-  background-image: url('/assets/images/bg-1.png');
+  background-image: url('../assets/images/bg-1.png');
   color: white;
 }
 
