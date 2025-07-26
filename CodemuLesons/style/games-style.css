@@ -1,46 +1,107 @@
-:root{
-    --height: 80%;
-    --width: 30%;
+/* Общие стили для секции игры */
+.games-all-box {
+ max-width: 800px;
+ margin: 40px auto;
+ padding: 20px;
+ background: #f9f9f9;
+ border-radius: 8px;
+ box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-main{
-    display: flex;
-    align-items: start;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;
+/* Стили для заголовка */
+.games-all-box h1 {
+ text-align: center;
+ color: #333;
+ margin-bottom: 30px;
+ font-size: 24px;
+}
 
+/* Стили для таблицы */
+.table-all-boxs {
+ width: 100%;
+}
+
+.table-boxs {
+ width: 100%;
+ border-collapse: collapse;
+ margin: 0 auto;
+}
+
+.table-boxs td {
+ padding: 15px;
+}
+
+/* Стили для кнопок */
+.table-boxs button {
+ width: 50px;
+ height: 50px;
+ font-size: 24px;
+ color: #333;
+ background: #fff;
+ border: 2px solid #ddd;
+ border-radius: 8px;
+ cursor: pointer;
+ transition: all 0.3s;
+}
+
+.table-boxs button:hover {
+ background: #f0f0f0;
+ border-color: #6c5ce7;
+}
+
+.table-boxs button.active {
+ background: #6c5ce7;
+ color: white;
+ border-color: #6c5ce7;
+}
+
+.table-boxs button.active {
+ animation: highlight 0.5s ease;
+}
+
+@keyframes highlight {
+ from {
+ transform: scale(1);
+ }
+ to {
+ transform: scale(1.05);
+ }
 }
 
 
 
 .games-all-box {
-    text-align: center;
-    width: var(--width);
-    height: var(--height);
-    padding: 10px;
-    margin-top: 20px;
-    border: 2px solid black;
-    border-radius: 20px;
-    background-color: antiquewhite;
+ background: #eef3ff; /* более светлый фон */
 }
 
-.table-all-boxs {
-    text-align: center;
-    width: 100%;
+.table-boxs button {
+ border-radius: 50%;
 }
 
-.table-boxs {
-    width: 100%;
-    height: var(--height);
+
+
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+ .table-boxs {
+ font-size: 18px;
+ }
+ 
+ .table-boxs button {
+ font-size: 18px;
+ width: 40px;
+ height: 40px;
+ }
 }
 
-/* button {
-    border: 2px solid black;
-    border-radius: 50%;
-} */
-
-
-
-
-
+@media (max-width: 480px) {
+ .games-all-box {
+ padding: 15px;
+ }
+ 
+ .table-boxs button {
+ font-size: 16px;
+ width: 35px;
+ height: 35px;
+ }
+}
