@@ -13,7 +13,7 @@ function getRandomInt(min, max) {
 
 
 
- myButton.addEventListener("click", function() {
+ myButton1111.addEventListener("click", function() {
     let userA = Number(A11.value);
     
     if (userA > botA) {
@@ -29,8 +29,5 @@ function getRandomInt(min, max) {
 
 
 
-const userNumber = document.getElementById ('userNumber5');
-const button1 = document.getElementById ('answerButton5');
-const resultRoot1 = document.getElementById('answer5');
-let number = 0;
+
 
