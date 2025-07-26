@@ -705,14 +705,14 @@ input.button-radio {
 
 .product-name-collback{
     color: #000000;
-    font-size: 20px;
+    font-size: 20pt;
     font-weight: 400;
 }
 
 
 .product-complect-collback{
     color: #767676;
-    font-size: 14px;
+    font-size: 14pt;
 }
 
 .collback-button{
@@ -721,7 +721,7 @@ input.button-radio {
     justify-content: center;
     font-family: "Inter", sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 16pt;
     background: linear-gradient(265deg, rgba(161, 69, 189, 0.8) -1.44%, rgba(55, 0, -89, 0.8) 77.83%), #000000;
     min-height: 50px;
     max-width: 247px;
@@ -737,7 +737,7 @@ input.button-radio {
     height: 50px;
     padding: 5px;
     border-radius: 20px;
-    font-size: 20px;
+    font-size: 20pt;
     background-color: #ffffff00;
     border: none;
     outline: none;
@@ -745,13 +745,14 @@ input.button-radio {
 
 
 label{
-    font-size: 18px;
+    font-size: 18pt;
 
 }
 
 .slogan-zayavka{
     margin: 20px 0;
-    font-size: 18px;
+    font-size: 18pt;
+    max-width: 700px;
 }
 
 .wrapper-bg-collback{
