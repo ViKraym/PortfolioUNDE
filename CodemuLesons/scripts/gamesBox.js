@@ -1,4 +1,4 @@
-const buttons = document.querySelectorAll('button');
+const buttons = document.querySelectorAll('.button-game-box');
 const botNumber = getRandomInt(1, 11);
 // console.log(botNumber);
 
