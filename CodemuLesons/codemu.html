@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="CodemuLesons/style/header-style.css">
     <link rel="stylesheet" href="CodemuLesons/style/tab-style.css">
     <link rel="stylesheet" href="CodemuLesons/style/figure-calc.css">
+    <link rel="stylesheet" href="CodemuLesons/style/games-style.css">
     <link rel="stylesheet" href="CodemuLesons/style/main.css">
 
     <title>Home Work</title>
@@ -39,6 +40,7 @@
         <button class="tab-button active" data-target="#section1">Калькуляторы фигур на JavaScript</button>
         <button class="tab-button" data-target="#section2">Математические калькуляторы на JavaScript</button>
         <button class="tab-button" data-target="#section3">Игра "угадай число"</button>
+        <button class="tab-button" data-target="#section4">Игра "угадай ячейку"</button>
     </div>
     
     <div class="tab-content">
@@ -194,6 +196,32 @@
                     <div class="perimeter" id="answer"></div>            
             </div>
         </section>
+
+        <section id="section4" class="tab-section">
+                <div class="games-all-box">
+                <h1>Игра "Угадай ячейку"</h1>
+                    <div class="table-all-boxs">
+                        <table class="table-boxs">
+                            <tr>
+                                <!-- ✔ • -->
+                                <td><button name="1">•</button></td>
+                                <td><button name="2">•</button></td>
+                                <td><button name="3">•</button></td>
+                                <td><button name="4">•</button></td>
+                                <td><button name="5">•</button></td>
+                            </tr>
+                            <tr>
+                                <!-- ✔ -->
+                                <td><button name="6">•</button></td>
+                                <td><button name="7">•</button></td>
+                                <td><button name="8">•</button></td>
+                                <td><button name="9">•</button></td>
+                                <td><button name="10">•</button></td>
+                            </tr>          
+                        </table>
+                    </div>
+                </div>
+        </section>
     </div>
 </div>
 
@@ -203,7 +231,7 @@
 <script src="CodemuLesons/scripts/math-calc.js" defer></script>
 <script src="CodemuLesons/scripts/gamesinnumber.js" defer></script>
 <script src="CodemuLesons/scripts/tab-section.js" defer></script>
-
+<script src="CodemuLesons/scripts/gamesBox.js" defer></script> 
 
 </body>
 </html>
