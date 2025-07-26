@@ -679,8 +679,8 @@ strong.text-obod {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
     align-items: start;
+    margin: 10px 0;
 }
 
 input[type="radio"] {
