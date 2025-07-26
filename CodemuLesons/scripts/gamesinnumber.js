@@ -1,6 +1,6 @@
 
 const A11 = document.getElementById('userNumber');
-const resultRoot = document.getElementById('answer');
+const resultRoot123 = document.getElementById('answer');
 const myButton = document.getElementById('answerButton');
 let botA = getRandomInt(1, 101);
 console.log(botA);
@@ -17,11 +17,11 @@ function getRandomInt(min, max) {
     let userA = Number(A11.value);
     
     if (userA > botA) {
-        return resultRoot.innerText = "Введите число поменьше";
+        return resultRoot123.innerText = "Введите число поменьше";
     } else if (userA < botA) {
-        return resultRoot.innerText = "Введите число побольше";
+        return resultRoot123.innerText = "Введите число побольше";
     } else {
-        return resultRoot.innerText = "Поздравляем вы угадали";
+        return resultRoot123.innerText = "Поздравляем вы угадали";
     }
 
 });
