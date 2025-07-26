@@ -39,7 +39,7 @@ header {
 
 /* Стили для навигации */
 
-.logo-buttom-nav {
+.logo-buttom-nav a{
     color: aquamarine !important;
 }
 
