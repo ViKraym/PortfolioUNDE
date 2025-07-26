@@ -757,9 +757,9 @@ label{
 }
 
 .wrapper-bg-collback{
-    margin-top: 920px;
-    width: 100% ;
-    height: 250%;
+    margin-top: 550px;
+    width: 100vw ;
+    height: 100%;
     position: absolute;
     z-index: -1;
 }
@@ -771,6 +771,7 @@ footer{
     justify-content: space-between;
     align-items: center;
     padding: 0 100px;
+    margin-top: 250px;
 }
 
 
