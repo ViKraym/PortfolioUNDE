@@ -4,7 +4,7 @@ body{
 }
 
 a{
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 header {
@@ -40,7 +40,7 @@ header {
 /* Стили для навигации */
 
 .logo-buttom-nav {
-    color: aquamarine;
+    color: aquamarine !important;
 }
 
 nav ul {
