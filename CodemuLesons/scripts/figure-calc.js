@@ -2,9 +2,9 @@
 const num = document.getElementById('number');
 const resultArea = document.getElementById('area');
 const resultSperimeter = document.getElementById('perimeter');
-const myButton = document.getElementById('hideButtonSquare');
+const myButton1 = document.getElementById('hideButtonSquare');
 
- myButton.addEventListener("click", function() {
+ myButton1.addEventListener("click", function() {
 
   var inputValue = Number(num.value);
   resultArea.innerText = Math.pow(inputValue, 2);
