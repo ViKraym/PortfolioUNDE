@@ -1,7 +1,7 @@
 
 const A11 = document.getElementById('userNumber');
 const resultRoot123 = document.getElementById('answer');
-const myButton = document.getElementById('answerButton');
+const myButton1111 = document.getElementById('answerButton');
 let botA = getRandomInt(1, 101);
 console.log(botA);
 
