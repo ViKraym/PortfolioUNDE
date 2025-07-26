@@ -1,0 +1,64 @@
+/* Общие стили для секции приветствия */
+.intro-section {
+    background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Стили для текста */
+.intro-section p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+/* Декоративные элементы */
+.intro-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    mix-blend-mode: multiply;
+    pointer-events: none;
+}
+
+/* Анимация появления */
+.intro-section {
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    .intro-section {
+        padding: 60px 20px;
+    }
+    
+    .intro-section p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro-section {
+        padding: 40px 20px;
+    }
+}
