@@ -683,7 +683,7 @@ strong.text-obod {
     align-items: start;
 }
 
-.button-radio{
+input[type="radio"] {
     margin: 0 0 0 20px;
 }
 
