@@ -11,52 +11,91 @@ main{
 
 }
 
-
-
+/* Общие стили для секции */
 .area-perimeter-figure {
-    display: flex;
-    flex-direction: column;
-    width: 350px;
-    height: var(--height);
-    padding: 10px;
-    margin-top: 20px;
-      border: 2px solid black;
-    border-radius: 20px;
-    background-color: antiquewhite;
-
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-
-
-.Sfigure{
-    display: flex;
-    align-items: start;
-    flex-direction: row;
-    justify-items: center;
-}
-
-
-
-.area, .perimeter {
+/* Стили для заголовка */
+.area-perimeter-figure h1 {
     text-align: center;
-    font-size: 14pt;
-    max-width: 50%;
-    min-height: 20px;
-    margin-top: 1%;
-    border: 2px solid black;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 24px;
 }
 
+/* Стили для формы ввода */
+.Sfigure {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Стили для input */
+.input-box {
+    width: 45%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.input-box:focus {
+    border-color: #6c5ce7;
+    outline: none;
+    box-shadow: 0 0 5px rgba(108,92,231,0.5);
+}
+
+/* Стили для кнопки */
 .hideButton {
-    width: 100px;
-    margin-left: 5px;
+    padding: 10px 20px;
+    background: #6c5ce7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s;
 }
 
-input {
-    margin-left: 5px;
-    width: 20px;
+.hideButton:hover {
+    background: #5a4ee6;
 }
 
-h6 {
-    margin: 0;
-    padding: 0;
+/* Стили для результатов */
+.area, .perimeter {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #eef3ff;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Стили для подзаголовков */
+.area-perimeter-figure h6 {
+    margin: 10px 0;
+    color: #6c5ce7;
+    font-size: 16px;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    .Sfigure {
+        flex-direction: column;
+    }
+    
+    .input-box {
+        width: 100%;
+        margin-bottom: 15px;
+    }
 }
