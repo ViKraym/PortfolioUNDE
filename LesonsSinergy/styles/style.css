@@ -679,10 +679,13 @@ strong.text-obod {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    
     align-items: start;
 }
 
-
+.button-radio{
+    margin: 0 0 0 20px;
+}
 
 .checkbox-item-box {
     display: flex;
