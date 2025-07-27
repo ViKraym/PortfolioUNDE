@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "syne";
+    src: url(../Zency/assets/Fonts/Syne.ttf);
+}
+
+
+
 * {
 margin: 0;
 padding: 0;
