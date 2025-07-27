@@ -6,10 +6,32 @@ header {
     color: white;
 }
 
+nav {
+   color: white;
+}
+
+ol {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    text-decoration: none;
+}
+
 .massage {
     background-color: #DCFD68;
     border-radius: 50% ;
 }
+
+
+
+
+
+
+
+
+
 
 .sub-header {
     background-color: #191928;
