@@ -1,0 +1,20 @@
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+.massage {
+    background-color: #DCFD68;
+    border-radius: 50% ;
+}
+
+.sub-header {
+    background-color: #191928;
+}
+
+.title-sub-header {
+    font-size: 118px;
+}
