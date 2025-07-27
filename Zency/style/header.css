@@ -4,6 +4,9 @@ header {
     align-items: center;
     justify-content: space-around;
     color: white;
+
+    font-family: 'syne';
+
 }
 
 nav {
