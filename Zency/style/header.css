@@ -43,8 +43,22 @@ li a{
 
 .sub-header {
     background-color: #191928;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .title-sub-header {
     font-size: 118px;
+}
+
+.button-start {
+    background-color: #DCFD68;
+    color: #000000;
+}
+
+.button-start img {
+    background-color: #000000;
+    color: #ffffff;
 }
