@@ -121,6 +121,15 @@ li a{
     background-color: #333;
 }
 
+.input-with-svg::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('data:Zency/assets/images/Message.svg'); /* Здесь вставьте SVG в формате base64 */
+    margin-right: 10px;
+}
+
 .subscribe-button {
     padding: 10px 20px;
     border: none;
