@@ -53,6 +53,10 @@ li a{
     justify-content: center;
 }
 
+.lenguage {
+    gap: 20px;
+}
+
 
 .message {
     border-radius: 50%;
