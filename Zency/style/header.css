@@ -38,6 +38,9 @@ li a{
     width: 1760px;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: anchor-center;
+
 }
 
 .lenguage-box{
