@@ -105,17 +105,14 @@ li a{
 .subscribe-form {
     display: flex;
     align-items: center;
-    background-color: #222;
-    padding: 15px;
-    border-radius: 32px;
 }
 
 .subscribe-form input {
     flex: 1;
     margin-right: 10px;
-    padding: 10px;
+    padding: 20px 20px;
     border: none;
-    border-radius: 4px;
+    border-radius: 32px;
     font-size: 16px;
     color: white;
     background-color: #333;
@@ -126,12 +123,14 @@ li a{
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-image: url('data:Zency/assets/images/Message.svg'); /* Здесь вставьте SVG в формате base64 */
+    background-image: url('Zency/assets/images/Message.svg'); /* Здесь вставьте SVG в формате base64 */
     margin-right: 10px;
 }
 
 .subscribe-button {
-    padding: 10px 20px;
+    padding: 20px 20px;
+    position: relative;
+    left: -50px;
     border: none;
     border-radius: 32px;
     font-size: 16px;
