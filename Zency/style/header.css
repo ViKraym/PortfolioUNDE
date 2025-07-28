@@ -96,12 +96,18 @@ li a{
 
 /* subscribe-form */
 
+.mail-box{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
 .subscribe-form {
     display: flex;
     align-items: center;
     background-color: #222;
     padding: 15px;
-    border-radius: 8px;
+    border-radius: 32px;
 }
 
 .subscribe-form input {
@@ -118,11 +124,11 @@ li a{
 .subscribe-button {
     padding: 10px 20px;
     border: none;
-    border-radius: 4px;
+    border-radius: 32px;
     font-size: 16px;
     font-weight: bold;
     color: black;
-    background-color: #ffeb3b;
+    background-color: #DCFD68;
     cursor: pointer;
     transition: background-color 0.3s;
 }
