@@ -44,18 +44,20 @@ li a{
 
 }
 
-.lenguage{
+.lenguage, 
+.lenguage-wrapper, 
+.message-box {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-.lenguage-wrapper{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+
+.message {
+    border-radius: 50%;
+    background-color: #DCFD68;
+
 }
 
 
