@@ -28,10 +28,6 @@ li a{
     color: #ffffff;
 }
 
-.massage {
-    background-color: #DCFD68;
-    border-radius: 50% ;
-}
 
 .header {
     border-bottom: 1px solid white;
@@ -43,6 +39,50 @@ li a{
     align-items: anchor-center;
 
 }
+
+.svg-logo {
+    background-color: #DCFD68;
+    padding: 10px;
+    margin: 10px 0 0 0;
+    border-radius: 50%;
+}
+
+.logo-title{
+    position: relative;
+    top: -10px;
+    font-size: 56px;
+    font-weight: 400;
+    margin: 0 0 0 10px;
+}
+
+.activ-li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.activ-li:hover{
+    background-color: #DCFD68;
+}
+
+.activ-li:hover span{
+    color: #000000;
+}
+
+.activ-li:hover .svg-logo {
+    
+    fill: #ffffff;
+    background-color: black;
+}
+
+.activ-li:hover .svg-logo g{
+    fill: #ffffff;
+    background-color: black;
+}
+
 
 .lenguage, 
 .lenguage-wrapper, 
@@ -57,13 +97,14 @@ li a{
     gap: 20px;
 }
 
-
 .message {
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     background-color: #DCFD68;
-    padding: 5px;
+    padding: 15px;
+    margin: 0 0 0 15px;
 }
-
 
 
 /* sub-header style */
@@ -131,6 +172,7 @@ li a{
     font-size: 16px;
     color: white;
     background-color: #333;
+    border-style: none;
 }
 
 .input-with-svg::before {
@@ -145,7 +187,7 @@ li a{
 .subscribe-button {
     padding: 20px 20px;
     position: relative;
-    left: -50px;
+    left: -70px;
     border: none;
     border-radius: 32px;
     font-size: 16px;
@@ -160,7 +202,3 @@ li a{
     background-color: #DCFD68;
 }
 
-.wrapper-white {
-    min-height: 550px;
-    background-color: #ffffff;
-}
