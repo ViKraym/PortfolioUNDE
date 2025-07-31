@@ -12,6 +12,10 @@
     padding: 0;
 }
 
+html {
+    min-width: 1440px;
+}
+
 body {
     background-color: #191928;
     font-family: 'syne';
@@ -192,8 +196,7 @@ input:focus {
     grid-auto-flow: column; /* Элементы будут располагаться в строку */
     gap: 0px; /* Расстояние между элементами */
     grid-template-columns: repeat(4, 1fr) ; /* 4 колонки одинаковой ширины */
-    /* padding: 20px; */
-    width: 80vw;
+    min-width: 80vw;
     background: linear-gradient(90deg,rgba(255, 255, 255, 0.1) 10%, rgba(255, 255, 255, 0.05)100%);
     
 }
@@ -315,7 +318,7 @@ grid-template-rows: repeat(2, 1fr);
 
 grid-column-gap: 20px;
 grid-row-gap: 20px;
-width: 80vw;
+min-width: 80vw;
 }
 
 .grid-container img{
