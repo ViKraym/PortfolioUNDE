@@ -256,6 +256,12 @@ a {
   color: #333;
 }
 
+.zency{
+  background-color: rgb(0 0 0 / 68%); 
+  border-radius: 16px;  
+  padding: 10px;
+}
+
 .project-logo {
   width: 180px;
   height: 120px;
