@@ -124,6 +124,10 @@
     width: 100%;
   }
 
+  .about-box h2 {
+    font-size: 36px;
+}
+
   .about-box {
     text-align: center;
   }
