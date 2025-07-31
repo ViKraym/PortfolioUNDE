@@ -60,190 +60,131 @@
   }
 }
 
-
+  /* ============= Общие стили для экрано менее 768 px============= */
 
 @media (max-width: 768px) {
-
-
-.title-sub-header {
+  /* ============= Общие стили ============= */
+  .title-sub-header {
     font-size: 38px;
-}
-
-
-.mail-box {
+  }
+  
+  .mail-box {
     flex-direction: column;
-}
+  }
 
+  /* ============= Слайдер ============= */
+  .wrapper-slides {
+    display: none; /* Скрываем на мобильных */
+  }
 
+  /* ============= Блок "О нас" ============= */
+  .about {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 80%;
+  }
 
-
-
-
-
-
-
-
-
-    
-/* ===========================================================
-        Скрываем слайдер на десктопе 
-===============================================================*/
-
-.wrapper-slides {
-    display: none;
-}
-
-/* ===========================================================
-        mission-about для телефонов
-===============================================================*/
-    .about {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
-        width: 80%;
-    }
-
-
-    
-.container-mission {
+  .container-mission {
     width: 100%;
-}
+  }
 
-
-
-.since-box {
-    font-size: 56px;
+  .since-box {
+    font-size: 10vw; /* Адаптивный размер */
     width: 100%;
-}
+  }
 
-.mission-box {
+  .mission-box {
     width: 100%;
-}
+  }
 
-    .container-about {
-        color: aliceblue;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 50px 0;
-        width: 100%;
-    }
+  .container-about {
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    width: 100%;
+  }
 
-    .about-box {
-        text-align: center;
-    }
+  .about-box {
+    text-align: center;
+  }
 
-/* ===========================================================
-        about-nav для телефонов
-===============================================================*/
+  /* ============= Навигация "О нас" ============= */
   .about-nav ol {
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 80%;
-        text-align: center;
-        justify-content: center;
-   }
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+  }
 
-   .about-nav li {
-        margin: 15px 0 0 0;
-        width: 100%;
-   }
+  .about-nav li {
+    margin: 15px 0 0 0;
+    width: 100%;
+  }
 
-
-/* ===========================================================
-        Our-Services-Areas для телефонов
-===============================================================*/
-
- .areas-wrapper {
-    grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+  /* ============= Услуги ============= */
+  .areas-wrapper {
+    grid-template-columns: repeat(2, 1fr);
     grid-auto-flow: row;
   }
 
-
-.innovation{
+  .innovation {
     display: none;
-}
+  }
 
-
-/* ===========================================================
-        cases-studies для телефонов
-===============================================================*/
-
-.grid-container {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: 2fr repeat(2, 1fr);
-grid-column-gap: 15px;
-grid-row-gap: 15px;
-}
-
-.div1 { grid-area: 2 / 1 / 3 / 2; }
-.div2 { grid-area: 3 / 1 / 4 / 2; }
-.div3 { grid-area: 1 / 1 / 2 / 3; }
-.div4 { grid-area: 2 / 2 / 3 / 3; }
-.div5 { grid-area: 3 / 2 / 4 / 3; }
-
-
-
-.innovation-main-title {
-    margin: 0 0 50px 15px;
-    font-size: 11vw;
-}
-
-
-/* ===========================================================
-        workers-card-box  для телефонов
-===============================================================*/
-.workers-card-box {
-
-grid-template-columns: repeat(1, 1fr);
-}
-
-
-
-
-/* ===========================================================
-        workers-card-box  для телефонов
-===============================================================*/
-.workers-card-box {
-
-grid-template-columns: repeat(1, 1fr);
-}
-
-
-/* ===========================================================
-        stories-blog-parent  для телефонов
-===============================================================*/
-.stories-blog-parent {
+  /* ============= Кейсы ============= */
+  .grid-container {
     display: grid;
-grid-template-columns: 1fr;
-grid-template-rows: repeat(1, 1fr);
-grid-column-gap: 15px;
-grid-row-gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2fr repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+  }
+
+  .div1 { grid-area: 2 / 1 / 3 / 2; }
+  .div2 { grid-area: 3 / 1 / 4 / 2; }
+  .div3 { grid-area: 1 / 1 / 2 / 3; }
+  .div4 { grid-area: 2 / 2 / 3 / 3; }
+  .div5 { grid-area: 3 / 2 / 4 / 3; }
+
+  .innovation-main-title {
+    margin: 0 0 50px 15px;
+    font-size: 11vw; /* Адаптивный размер */
+  }
+
+  /* ============= Команда ============= */
+  .workers-card-box {
+    grid-template-columns: 1fr; /* Одна колонка */
+  }
+
+  /* ============= Блог/Новости ============= */
+  .stories-blog-parent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+  }
+
+  .div1-news { grid-area: 1 / 1 / 2 / 2; }
+  .div2-news { grid-area: 2 / 1 / 3 / 2; }
+  .div3-news { grid-area: 3 / 1 / 4 / 2; }
+  .div4-news { grid-area: 4 / 1 / 5 / 2; }
+  .div5-news { grid-area: 5 / 1 / 6 / 2; }
+
+  .div2-news, 
+  .div3-news, 
+  .div4-news {
+    position: relative;
+    overflow: hidden;
+    height: 15rem;
+  }
 }
 
-.div1-news { grid-area: 1 / 1 / 2 / 2; }
-.div2-news { grid-area: 2 / 1 / 3 / 2; }
-.div3-news { grid-area: 3 / 1 / 4 / 2; }
-.div4-news { grid-area: 4 / 1 / 5 / 2; }
-.div5-news { grid-area: 5 / 1 / 6 / 2; }
-
-/* Общие стили для новостных блоков */
-.div2-news, .div3-news, .div4-news {
-position: relative;
-overflow: hidden;
-height: 15rem;
-}
-
-
-
-
-
-
-
-
-}
 
 
