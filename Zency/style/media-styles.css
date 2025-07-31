@@ -42,6 +42,29 @@
 }
 
 
+
+
+
+
+
+
+/* Для телефонов (480px и меньше) */
+@media (max-width: 480px) {
+  .areas-wrapper {
+    grid-template-columns: 1fr; /* 1 колонка */
+    grid-auto-flow: row;
+    min-width: 90vw;
+    margin: 0 auto;
+    padding: 10px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+  }
+}
+
+
+
+@media (max-width: 768px) {
+
+
 /* ===========================================================
         Скрываем слайдер на десктопе 
 ===============================================================*/
@@ -53,9 +76,6 @@
 /* ===========================================================
         mission-about для телефонов
 ===============================================================*/
-/* Адаптация для планшетов и телефонов */
-@media (max-width: 768px) {
-
     .about {
         flex-direction: column;
         justify-content: center;
@@ -78,17 +98,10 @@
         text-align: center;
     }
 
-}
-
-
 /* ===========================================================
         about-nav для телефонов
 ===============================================================*/
-
-
-@media (max-width: 768px) {
-
-   .about-nav ol {
+  .about-nav ol {
         flex-direction: row;
         flex-wrap: wrap;
         width: 80%;
@@ -102,37 +115,24 @@
    }
 
 
-}
-
 /* ===========================================================
         Our-Services-Areas для телефонов
 ===============================================================*/
 
-/* Для планшетов (768px и меньше) */
-@media (max-width: 768px) {
-  .areas-wrapper {
+ .areas-wrapper {
     grid-template-columns: repeat(2, 1fr); /* 2 колонки */
     grid-auto-flow: row;
   }
-}
 
-/* Для телефонов (480px и меньше) */
-@media (max-width: 480px) {
-  .areas-wrapper {
-    grid-template-columns: 1fr; /* 1 колонка */
-    grid-auto-flow: row;
-    min-width: 90vw;
-    margin: 0 auto;
-    padding: 10px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
-  }
+
+.innovation{
+    display: none;
 }
 
 
 /* ===========================================================
         cases-studies для телефонов
 ===============================================================*/
-@media (max-width: 768px) {
 
 .grid-container {
 display: grid;
@@ -151,11 +151,8 @@ grid-row-gap: 15px;
 }
 
 
-@media (max-width: 768px) {
-    
-    .innovation-main-title {
-        margin: 0 0 50px 15px;
-        font-size: 11vw;
-    }
-    
+.innovation-main-title {
+    margin: 0 0 50px 15px;
+    font-size: 11vw;
 }
+
