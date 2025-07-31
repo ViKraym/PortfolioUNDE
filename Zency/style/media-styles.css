@@ -65,6 +65,26 @@
 @media (max-width: 768px) {
 
 
+.title-sub-header {
+    font-size: 38px;
+}
+
+
+.mail-box {
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+    
 /* ===========================================================
         Скрываем слайдер на десктопе 
 ===============================================================*/
@@ -84,6 +104,23 @@
         width: 80%;
     }
 
+
+    
+.container-mission {
+    width: 100%;
+}
+
+
+
+.since-box {
+    font-size: 56px;
+    width: 100%;
+}
+
+.mission-box {
+    width: 100%;
+}
+
     .container-about {
         color: aliceblue;
         display: flex;
@@ -91,7 +128,7 @@
         align-items: center;
         justify-content: center;
         padding: 50px 0;
-        width: 80%;
+        width: 100%;
     }
 
     .about-box {
