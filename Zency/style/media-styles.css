@@ -71,7 +71,7 @@
         align-items: center;
         justify-content: center;
         padding: 50px 0;
-        width: 50%;
+        width: 80%;
     }
 
     .about-box {
@@ -89,8 +89,18 @@
 @media (max-width: 768px) {
 
    .about-nav ol {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 80%;
+        text-align: center;
+        justify-content: center;
    }
+
+   .about-nav li {
+        margin: 15px 0 0 0;
+        width: 100%;
+   }
+
 
 }
 
