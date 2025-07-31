@@ -1,6 +1,8 @@
 
 
-/* Скрываем кнопку гамбургера на десктопе */
+/* ===========================================================
+        Скрываем кнопку гамбургера на десктопе 
+===============================================================*/
 .hamburger {
     display: none;
     background: none;
@@ -13,7 +15,7 @@
     display: block;
     width: 25px;
     height: 3px;
-    background: #000;
+    background: #DCFD68;
     margin: 5px 0;
     transition: 0.4s;
 }
@@ -37,4 +39,43 @@
     .menu-list.active {
         display: flex;
     }
+}
+
+
+/* ===========================================================
+        Скрываем слайдер на десктопе 
+===============================================================*/
+
+.wrapper-slides {
+    display: none;
+}
+
+/* ===========================================================
+        mission-about для телефонов
+===============================================================*/
+/* Адаптация для планшетов и телефонов */
+@media (max-width: 768px) {
+    
+    .about {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        width: 80%;
+    }
+
+    .container-about {
+        color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 0;
+        width: 50%;
+    }
+
+    .about-box {
+        text-align: center;
+    }
+
 }
