@@ -182,7 +182,7 @@ grid-template-columns: repeat(1, 1fr);
 .stories-blog-parent {
     display: grid;
 grid-template-columns: 1fr;
-grid-template-rows: repeat(5, 1fr);
+grid-template-rows: repeat(1, 1fr);
 grid-column-gap: 15px;
 grid-row-gap: 15px;
 }
@@ -192,6 +192,19 @@ grid-row-gap: 15px;
 .div3-news { grid-area: 3 / 1 / 4 / 2; }
 .div4-news { grid-area: 4 / 1 / 5 / 2; }
 .div5-news { grid-area: 5 / 1 / 6 / 2; }
+
+/* Общие стили для новостных блоков */
+.div2-news, .div3-news, .div4-news {
+position: relative;
+overflow: hidden;
+height: 15rem;
+}
+
+
+
+
+
+
 
 
 }
