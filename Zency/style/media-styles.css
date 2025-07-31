@@ -63,17 +63,16 @@
   /* ============= Общие стили для экрано менее 768 px============= */
 
 @media (max-width: 768px) {
-    /* ============= Общие стили ============= */
     .lenguage, .button-start, .abstract {
     display: none;
   }
-
 
   /* ============= Общие стили ============= */
   .title-sub-header {
         text-align: center;
         font-size: 30px;
     }
+
   
   .mail-box {
     flex-direction: column;
@@ -106,6 +105,7 @@
   }
 
   .since-box {
+    text-align: center;
     font-size: 10vw; /* Адаптивный размер */
     width: 100%;
   }
