@@ -148,11 +148,52 @@ grid-row-gap: 15px;
 .div4 { grid-area: 2 / 2 / 3 / 3; }
 .div5 { grid-area: 3 / 2 / 4 / 3; }
 
-}
 
 
 .innovation-main-title {
     margin: 0 0 50px 15px;
     font-size: 11vw;
 }
+
+
+/* ===========================================================
+        workers-card-box  для телефонов
+===============================================================*/
+.workers-card-box {
+
+grid-template-columns: repeat(1, 1fr);
+}
+
+
+
+
+/* ===========================================================
+        workers-card-box  для телефонов
+===============================================================*/
+.workers-card-box {
+
+grid-template-columns: repeat(1, 1fr);
+}
+
+
+/* ===========================================================
+        stories-blog-parent  для телефонов
+===============================================================*/
+.stories-blog-parent {
+    display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 15px;
+grid-row-gap: 15px;
+}
+
+.div1-news { grid-area: 1 / 1 / 2 / 2; }
+.div2-news { grid-area: 2 / 1 / 3 / 2; }
+.div3-news { grid-area: 3 / 1 / 4 / 2; }
+.div4-news { grid-area: 4 / 1 / 5 / 2; }
+.div5-news { grid-area: 5 / 1 / 6 / 2; }
+
+
+}
+
 
