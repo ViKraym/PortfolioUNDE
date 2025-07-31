@@ -1,39 +1,40 @@
-/* Базовые стили для десктопов (по умолчанию) */
 
 
-/* Для планшетов (ширина 481-768px) */
-@media (max-width: 768px) {
-  nav.header-menu ol {
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-  nav.header-menu ol li a {
-    font-size: 14px;
-    padding: 8px 12px;
-  }
-}
-
-/* Для телефонов (ширина до 480px) */
-@media (max-width: 480px) {
-  nav.header-menu ol {
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-  }
-  nav.header-menu ol li {
-    width: 100%;
-    text-align: center;
-  }
-  nav.header-menu ol li a {
-    display: block;
+/* Скрываем кнопку гамбургера на десктопе */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
     padding: 10px;
-    border-bottom: 1px solid #eee;
-  }
 }
 
-/* Дополнительно: вертикальная ориентация */
-@media (orientation: portrait) and (max-width: 768px) {
-  nav.header-menu ol {
-    gap: 8px;
-  }
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #000;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+/* Адаптация для планшетов и телефонов */
+@media (max-width: 768px) {
+    /* Показываем кнопку гамбургера */
+    .hamburger {
+        display: block;
+    }
+    
+    /* Скрываем меню по умолчанию */
+    .menu-list {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    
+    /* Если меню открыто (добавляется через JS) */
+    .menu-list.active {
+        display: flex;
+    }
 }

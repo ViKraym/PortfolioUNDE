@@ -18,14 +18,22 @@
             <img src="Zency/assets/images/logo-zency.svg" alt="main-logo">
         </div>
         <nav class="header-menu">
-                <ol>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Pages</a></li>
-                    <li><a href="">Service</a></li>
-                    <li><a href="">Cases Study</a></li>
-                    <li><a href="">Shop</a></li>
-                    <li><a href="">Blog</a></li>
-                </ol>
+            <!-- Кнопка гамбургера (только для мобильных) -->
+            <button class="hamburger" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <!-- Основное меню (скрыто на мобильных) -->
+            <ol class="menu-list">
+                <li><a href="">Home</a></li>
+                <li><a href="">Pages</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Cases Study</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Blog</a></li>
+            </ol>
         </nav>
         <div class="lenguage">
             <span class="lenguage-wrapper">
@@ -522,5 +530,6 @@
 <script src="Zency/js/slider.js" defer></script>
 <script src="Zency/js/workers-contact.js" defer></script>
 <script src="Zency/js/run-line.js" defer></script>
+<script src="Zency/js/hamburger.js" defer></script>
 </body>
 </html>
