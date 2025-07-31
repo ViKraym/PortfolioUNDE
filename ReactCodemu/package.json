@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://vikraym.github.io/ReactCodemu",
+  "homepage": "https://vikraym.github.io/PortfolioUNDE/ReactCodemu",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
