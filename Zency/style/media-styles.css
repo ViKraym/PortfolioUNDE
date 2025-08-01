@@ -3,11 +3,6 @@
 /* ===========================================================
         Скрываем кнопку гамбургера на десктопе 
 ===============================================================*/
-
-
-
-
-
 .hamburger {
     display: none;
     background: none;
@@ -32,18 +27,6 @@
     position: relative;
 }
 
-/* Стили меню */
-.menu-list {
-    position: absolute;
-    text-align: center;
-    top: 4.7rem;
-    left: -20rem;
-    width: 100%;
-    background: #8b8b8bd1; /* Цвет фона меню */
-    z-index: 99;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-    display: none;
-}
 
 
 /* Адаптация для планшетов и телефонов */
@@ -51,6 +34,21 @@
     /* Показываем кнопку гамбургера */
     .hamburger {
         display: block;
+    }
+
+
+    /* Стили меню */
+    .menu-list {
+        position: absolute;
+        text-align: center;
+        top: 4.7rem;
+        left: -20rem;
+        width: 100%;
+        background: #8b8b8bd1; /* Цвет фона меню */
+        z-index: 99;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        display: none;
+  
     }
 
     
