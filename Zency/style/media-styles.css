@@ -24,9 +24,8 @@
 
 /* Новые стили для контейнера */
 .menu-container {
-    position: relative;
+    position: none;
 }
-
 
 
 /* Адаптация для планшетов и телефонов */
@@ -35,6 +34,11 @@
     .hamburger {
         display: block;
     }
+
+    /* Новые стили для контейнера */
+.menu-container {
+    position: relative;
+}
 
 
     /* Стили меню */
