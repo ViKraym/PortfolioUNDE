@@ -4,9 +4,8 @@ header {
     align-items: center;
     justify-content: space-around;
     color: white;
-
-    font-family: 'syne';
-
+    font-family: 'syne';   
+    background-color: #191928;
 }
 
 nav {
