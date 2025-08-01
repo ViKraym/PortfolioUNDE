@@ -24,7 +24,7 @@
 
 /* Новые стили для контейнера */
 .menu-container {
-    position: none;
+    display: none;
 }
 
 
