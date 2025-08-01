@@ -39,6 +39,12 @@ li a{
 
 }
 
+.menu-list-desktop{
+     display: flex;
+    flex-direction: row;
+    color: #ffffff;
+}
+
 .svg-logo {
     background-color: #DCFD68;
     padding: 10px;

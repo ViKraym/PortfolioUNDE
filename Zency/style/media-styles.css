@@ -22,10 +22,7 @@
     z-index: 3;
 }
 
-/* Новые стили для контейнера */
-.menu-container {
-    display: none;
-}
+
 
 
 /* Адаптация для планшетов и телефонов */
@@ -36,10 +33,14 @@
     }
 
     /* Новые стили для контейнера */
-.menu-container {
-    position: relative;
-}
+      .menu-container {
+      
+      position: relative;
+      }
 
+      .menu-list-desktop {
+      display: none;
+      }
 
     /* Стили меню */
     .menu-list {
