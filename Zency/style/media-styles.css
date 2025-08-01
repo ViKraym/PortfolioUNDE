@@ -53,6 +53,9 @@
         display: block;
     }
 
+    header {
+    position: fixed;
+}
     
 li a {
     color: #000000;
