@@ -3,6 +3,11 @@
 /* ===========================================================
         Скрываем кнопку гамбургера на десктопе 
 ===============================================================*/
+
+
+
+
+
 .hamburger {
     display: none;
     background: none;
@@ -12,13 +17,34 @@
 }
 
 .hamburger span {
+  position: relative;
     display: block;
     width: 25px;
     height: 3px;
     background: #DCFD68;
     margin: 5px 0;
     transition: 0.4s;
+    z-index: 3;
 }
+
+/* Новые стили для контейнера */
+.menu-container {
+    position: relative;
+}
+
+/* Стили меню */
+.menu-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff; /* Цвет фона меню */
+    z-index: 99;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    display: none;
+}
+
+
 
 /* Адаптация для планшетов и телефонов */
 @media (max-width: 768px) {
@@ -35,9 +61,12 @@
         width: 100%;
     }
     
-    /* Если меню открыто (добавляется через JS) */
+   /* Меню будет открываться поверх контента */
     .menu-list.active {
         display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 0;
     }
 }
 
