@@ -178,12 +178,14 @@ width: 100%;
 .Our-Services-Areas p{
 color: #DCFD68;
 font-size: 18px;
+text-align: center;
 }
 
 .Our-Services-Areas h1{
 color: #ffffff;
 font-size: 56px;
 margin: 0 0 50px 0;
+text-align: center;
 }
 
 
@@ -293,6 +295,7 @@ color: #ffffff;
 font-size: 56px;
 font-weight: 600;
 margin: 0 0 40px 0;
+text-align: center;
 }
 
 .button-cases-studies {
@@ -439,7 +442,11 @@ width: 100%;
 }
 
 .workers-card-box {
-display: grid;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+display: flex;
+/* display: grid; */
 grid-template-columns: repeat(3, 1fr);
 grid-template-rows: repeat(1, 1fr);
 grid-column-gap: 15px;
@@ -458,8 +465,8 @@ padding: 0;
 }
 
 .workers-photo {
-width: 250px;
-height: 250px;
+    width: clamp(200px, 90vw, 385px);
+    height: clamp(170px, 40vh, 330px);
 object-fit: cover;
 display: block;
 }
