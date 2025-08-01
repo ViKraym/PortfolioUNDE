@@ -12,6 +12,10 @@ a {
   text-decoration: none;
 }
 
+section.about {
+    text-align: center;
+    font-size: 36px;
+}
 
 
 
@@ -131,7 +135,7 @@ a {
 }
 
 .accent-header {
- color: #590887;
+ color: #000000;
 }
 
 /* Адаптивные стили */
@@ -238,6 +242,13 @@ a {
 
 
 /* Сетка проектов */
+.projects{
+      text-align: center;
+    font-size: 30px;
+}
+
+
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
