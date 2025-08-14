@@ -708,7 +708,7 @@ footer {
     .slogan {
         font-size: 28px;
     }
-    .slogan strong {
+    .slogan .slogan-highlight {
         font-size: 22px;
     }
     .etaps-wrapper {
