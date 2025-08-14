@@ -228,9 +228,13 @@ main {
     margin: 25px 0;
  }
 .slogan { font-size: 56px; font-weight: 700; }
+
 .slogan .slogan-highlight { 
     font-size: 46px; 
     font-weight: 550; 
+     color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffffff;
 
 }
 
@@ -686,9 +690,7 @@ footer {
     }
     .slogan .slogan-highlight {
         font-size: 22px;
-        color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #515151;
+       
     }
     .etaps-wrapper {
         grid-template-columns: 1fr;
