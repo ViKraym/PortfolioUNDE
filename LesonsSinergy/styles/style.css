@@ -139,7 +139,15 @@ main {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin: 100px 0;
 }
+
+.hero-bg{
+        position: absolute;
+    z-index: 1;
+}
+
+
 .wrapper-bg {
     width: 100%;
     position: absolute;
