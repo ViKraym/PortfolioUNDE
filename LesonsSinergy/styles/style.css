@@ -228,34 +228,7 @@ main {
 .slogan .slogan-highlight { 
     font-size: 46px; 
     font-weight: 550; 
-    font-family: Arial;
-	font-size: 35px;
-	color: #FFFFFF;
-	text-shadow: 
-		-0   -2px 2px #000000,
-		 0   -2px 2px #000000,
-		-0    2px 2px #000000,
-		 0    2px 2px #000000,
-		-2px -0   2px #000000,
-		 2px -0   2px #000000,
-		-2px  0   2px #000000,
-		 2px  0   2px #000000,
-		-1px -2px 2px #000000,
-		 1px -2px 2px #000000,
-		-1px  2px 2px #000000,
-		 1px  2px 2px #000000,
-		-2px -1px 2px #000000,
-		 2px -1px 2px #000000,
-		-2px  1px 2px #000000,
-		 2px  1px 2px #000000,
-		-2px -2px 2px #000000,
-		 2px -2px 2px #000000,
-		-2px  2px 2px #000000,
-		 2px  2px 2px #000000,
-		-2px -2px 2px #000000,
-		 2px -2px 2px #000000,
-		-2px  2px 2px #000000,
-		 2px  2px 2px #000000;
+    
 }
 
 
