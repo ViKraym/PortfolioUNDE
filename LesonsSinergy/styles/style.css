@@ -223,7 +223,10 @@ main {
     font-weight: 900;
     margin: 10% 0 5% 0;
 }
-.etaps-content { max-width: 50%; }
+.etaps-content { 
+    max-width: 50%;
+    margin: 25px 0;
+ }
 .slogan { font-size: 56px; font-weight: 700; }
 .slogan .slogan-highlight { 
     font-size: 46px; 
